@@ -1,0 +1,90 @@
+{
+  "name": "Astra",
+  "version": "1.0.0",
+  "namemsg": "skinname-astra",
+  "descriptionmsg": "astra-skin-desc",
+  "url": "https://www.mediawiki.org/wiki/Skin:Astra",
+  "author": [
+    "[https://skins.wmflabs.org skins.wmflabs.org v.2.0]"
+  ],
+  "type": "skin",
+  "requires": {
+    "MediaWiki": ">= 1.37.0"
+  },
+  "license-name": "GPL-2.0-or-later",
+  "manifest_version": 2,
+  "ValidSkinNames": {
+    "astra": {
+      "class": "SkinMustache",
+      "args": [
+        {
+          "name": "Astra",
+          "responsive": true,
+          "messages": [
+            "astra-skip",
+            "astra-mainmenu",
+            "sitetitle",
+            "search",
+            "otherlanguages",
+            "tagline",
+            "search",
+            "sitetitle",
+            "categories",
+            "sitetitle"
+          ],
+          "styles": [
+            "mediawiki.ui.icon",
+            "mediawiki.ui.button",
+            "skins.astra.styles"
+          ],
+          "scripts": [
+            "skins.astra"
+          ],
+          "toc": false
+        }
+      ]
+    }
+  },
+  "MessagesDirs": {
+    "Astra": [
+      "i18n"
+    ]
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "",
+    "remoteSkinPath": "Astra"
+  },
+  "ResourceModules": {
+    "skins.astra.styles": {
+      "class": "ResourceLoaderSkinModule",
+      "features": {
+        "normalize": false,
+        "elements": false,
+        "content-tables": true,
+        "content-links": false,
+        "content-media": false,
+        "content-links-external": false,
+        "interface-message-box": true,
+        "interface-category": true,
+        "toc": true
+      },
+      "targets": [
+        "desktop",
+        "mobile"
+      ],
+      "styles": [
+        "resources/common.css",
+        "resources/skin.less"
+      ]
+    },
+    "skins.astra": {
+      "targets": [
+        "desktop",
+        "mobile"
+      ],
+      "packageFiles": [
+        "resources/skin.js"
+      ]
+    }
+  }
+}
