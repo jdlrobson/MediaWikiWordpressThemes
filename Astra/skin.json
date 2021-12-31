@@ -74,6 +74,7 @@
       ],
       "styles": [
         "resources/common.css",
+        "resources/toc.less",
         "resources/skin.less"
       ]
     },
