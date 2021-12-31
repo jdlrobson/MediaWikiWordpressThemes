@@ -21,6 +21,7 @@
           "name": "Astra",
           "responsive": true,
           "messages": [
+            "astra-categories",
             "astra-skip",
             "astra-mainmenu",
             "sitetitle",
