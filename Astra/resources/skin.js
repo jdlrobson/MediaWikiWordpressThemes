@@ -1,10 +1,3 @@
-function addClasses() {
-    var classes = ["ast-desktop","ast-separate-container","ast-right-sidebar","astra-3.6.8","ast-header-custom-item-inside","ast-blog-single-style-1","ast-custom-post-type","ast-single-post","ast-inherit-site-logo-transparent","ast-hfb-header","ast-desktop","ast-separate-container","ast-right-sidebar","astra-3.6.8"];
-    classes.forEach(function(c) {
-        document.body.classList.add(c);
-    });
-}
-addClasses();
 /**
  * Flexibility is a JavaScript polyfill for Flexbox By Jonathan Neal, 10up. (https://github.com/jonathantneal/flexibility)
  * Licensed under MIT ( https://github.com/jonathantneal/flexibility/blob/master/LICENSE.md )

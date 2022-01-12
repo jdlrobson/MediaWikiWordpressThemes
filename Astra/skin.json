@@ -9,7 +9,7 @@
   ],
   "type": "skin",
   "requires": {
-    "MediaWiki": ">= 1.37.0"
+    "MediaWiki": ">= 1.38.0"
   },
   "license-name": "GPL-2.0-or-later",
   "manifest_version": 2,
@@ -20,6 +20,18 @@
         {
           "name": "Astra",
           "responsive": true,
+          "bodyClasses": [
+            "ast-desktop",
+            "ast-separate-container",
+            "ast-right-sidebar",
+            "astra-3.6.8",
+            "ast-header-custom-item-inside",
+            "ast-blog-single-style-1",
+            "ast-custom-post-type",
+            "ast-single-post",
+            "ast-inherit-site-logo-transparent",
+            "ast-hfb-header"
+          ],
           "messages": [
             "astra-no-categories",
             "astra-skip",
