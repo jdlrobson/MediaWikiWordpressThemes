@@ -9,7 +9,7 @@
   ],
   "type": "skin",
   "requires": {
-    "MediaWiki": ">= 1.37.0"
+    "MediaWiki": ">= 1.38.0"
   },
   "license-name": "GPL-2.0-or-later",
   "manifest_version": 2,
@@ -18,20 +18,22 @@
       "class": "SkinMustache",
       "args": [
         {
-          "name": "Astra",
+          "name": "astra",
           "responsive": true,
           "messages": [
-            "astra-no-categories",
-            "astra-skip",
-            "astra-mainmenu",
+            "skinname-no-categories",
             "sitetitle",
             "search",
             "otherlanguages",
             "tagline",
             "search",
+            "astra-no-categories",
+            "astra-23",
             "sitetitle",
+            "astra-50",
             "categories",
-            "sitetitle"
+            "sitetitle",
+            "astra-52"
           ],
           "styles": [
             "mediawiki.ui.icon",
@@ -40,6 +42,18 @@
           ],
           "scripts": [
             "skins.astra"
+          ],
+          "bodyClasses": [
+            "ast-desktop",
+            "ast-separate-container",
+            "ast-right-sidebar",
+            "astra-3.6.8",
+            "ast-header-custom-item-inside",
+            "ast-blog-single-style-1",
+            "ast-custom-post-type",
+            "ast-single-post",
+            "ast-inherit-site-logo-transparent",
+            "ast-hfb-header"
           ],
           "toc": false
         }
@@ -66,7 +80,7 @@
         "content-media": false,
         "content-links-external": false,
         "interface-message-box": true,
-        "interface-category": true,
+        "interface-category": false,
         "toc": true
       },
       "targets": [
@@ -75,7 +89,6 @@
       ],
       "styles": [
         "resources/common.css",
-        "resources/toc.less",
         "resources/skin.less"
       ]
     },
@@ -88,5 +101,11 @@
         "resources/skin.js"
       ]
     }
+  },
+  "Hooks": {
+    "OutputPageBodyAttributes": "Astra\\Hooks::onOutputPageBodyAttributes"
+  },
+  "AutoloadNamespaces": {
+    "Astra\\": "includes/"
   }
 }

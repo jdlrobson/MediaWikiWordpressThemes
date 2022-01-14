@@ -3451,6 +3451,10 @@ html{font-size:93.75%;}a,.page-title{color:#0170B9;}a:hover,a:focus{color:#3a3a3
 		overflow-x: auto;
 	}
 }
+.entry-content h2.mw-toc-heading,
+h2#mw-toc-heading {
+    font-size: 1em;
+}
 /* Some Wordpress themes don't declare */
 @media screen {
     /* body because applies to @media screen and those styles apply last. */
