@@ -14,7 +14,7 @@ class="hfeed site" id="page">
 		<div class="site-branding">
 			<div
 			class="ast-site-identity"			>
-				<div class="ast-site-title-wrap">
+				<span class="site-logo-img">{{>Logo}}</span><div class="ast-site-title-wrap">
 						<h1 class="site-title">
 				<a href="{{link-mainpage}}" rel="home" class="site-title-link" >
 					{{msg-sitetitle}}
@@ -39,7 +39,7 @@ class="hfeed site" id="page">
 			<!-- do_action:end astra_masthead_toggle_buttons-->
 			<!-- do_action:start astra_masthead_toggle_buttons_after--><!-- do_action:end astra_masthead_toggle_buttons_after-->
 		</div>
-			<div class="ast-main-header-bar-alignment"><!-- wp_nav_menu: primary--><div class="main-header-bar-navigation mw-wp-menu"><nav class="ast-flex-grow-1 navigation-accessibility" id="site-navigation" aria-label="Site Navigation"><div class="main-navigation"><ul id="mw-primary" class="main-header-menu ast-nav-menu ast-flex ast-justify-content-flex-end  submenu-with-border">{{#data-portlets-sidebar.data-portlets-first}}{{{html-items}}}{{/data-portlets-sidebar.data-portlets-first}}</ul></div></nav><!--{"theme_location":"primary","menu_id":"primary-menu","menu_class":"main-header-menu ast-nav-menu ast-flex ast-justify-content-flex-end  submenu-with-border","container":"div","container_class":"main-header-bar-navigation","items_wrap":"<nav class=\"ast-flex-grow-1 navigation-accessibility\" id=\"site-navigation\" aria-label=\"Site Navigation\"><div class=\"main-navigation\"><ul id=\"%1$s\" class=\"%2$s\">%3$s<\/ul><\/div><\/nav>"}--></div>
+			<div class="ast-main-header-bar-alignment"><!-- wp_nav_menu: primary--><div class="main-header-bar-navigation mw-wp-menu"><nav class="ast-flex-grow-1 navigation-accessibility" id="site-navigation" aria-label="Site Navigation"><div class="main-navigation"><ul id="mw-primary" class="main-header-menu ast-nav-menu ast-flex ast-justify-content-flex-end  submenu-with-border">{{#data-portlets-sidebar.data-portlets-first}}{{{html-items}}}{{/data-portlets-sidebar.data-portlets-first}}<!-- get_menu_for_mediawiki: primary--></ul></div></nav><!--{"theme_location":"primary","menu_id":"primary-menu","menu_class":"main-header-menu ast-nav-menu ast-flex ast-justify-content-flex-end  submenu-with-border","container":"div","container_class":"main-header-bar-navigation","items_wrap":"<nav class=\"ast-flex-grow-1 navigation-accessibility\" id=\"site-navigation\" aria-label=\"Site Navigation\"><div class=\"main-navigation\"><ul id=\"%1$s\" class=\"%2$s\">%3$s<\/ul><\/div><\/nav>"}--></div>
 </div><!-- do_action:end astra_masthead_content-->			</div><!-- Main Header Container -->
 		</div><!-- ast-row -->
 		<!-- do_action:start astra_main_header_bar_bottom--><!-- do_action:end astra_main_header_bar_bottom-->	</div> <!-- Main Header Bar -->
@@ -51,7 +51,7 @@ class="hfeed site" id="page">
 <!-- do_action:start astra_mobile_header--><div id="ast-mobile-header" class="ast-mobile-header-wrap " data-type="dropdown">
 	<!-- do_action:start astra_mobile_header_bar_top--><!-- do_action:end astra_mobile_header_bar_top--><!-- do_action:start astra_mobile_above_header--><!-- do_action:end astra_mobile_above_header--><!-- do_action:start astra_mobile_primary_header--><!-- do_action:end astra_mobile_primary_header--><!-- do_action:start astra_mobile_below_header--><!-- do_action:end astra_mobile_below_header--><!-- do_action:start astra_main_header_bar_bottom--><!-- do_action:end astra_main_header_bar_bottom-->	<div class="ast-mobile-header-content content-align-flex-start ">
 		<!-- do_action:start astra_mobile_header_content-->		<div class="ast-builder-menu-mobile ast-builder-menu ast-builder-menu-mobile-focus-item ast-builder-layout-element site-header-focus-item" data-section="section-header-mobile-menu">
-			<!-- do_action:start astra_header_menu_mobile--><div class="ast-main-header-bar-alignment"><!-- wp_nav_menu: mobile_menu--><div class="main-header-bar-navigation mw-wp-menu"><nav class="ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="site-navigation" aria-label="Site Navigation"><div class="main-navigation"><ul id="mw-mobile_menu" class="main-header-menu ast-nav-menu ast-flex  submenu-with-border astra-menu-animation-fade  stack-on-mobile"><!-- TODO:get_menu_for_mediawiki: mobile_menu--></ul></div></nav><!--{"menu_id":"ast-hf-mobile-menu","menu_class":"main-header-menu ast-nav-menu ast-flex  submenu-with-border astra-menu-animation-fade  stack-on-mobile","container":"div","container_class":"main-header-bar-navigation","items_wrap":"<nav class=\"ast-flex-grow-1 navigation-accessibility site-header-focus-item\" id=\"site-navigation\" aria-label=\"Site Navigation\"><div class=\"main-navigation\"><ul id=\"%1$s\" class=\"%2$s\">%3$s<\/ul><\/div><\/nav>","theme_location":"mobile_menu"}--></div>
+			<!-- do_action:start astra_header_menu_mobile--><div class="ast-main-header-bar-alignment"><!-- wp_nav_menu: mobile_menu--><div class="main-header-bar-navigation mw-wp-menu"><nav class="ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="site-navigation" aria-label="Site Navigation"><div class="main-navigation"><ul id="mw-mobile_menu" class="main-header-menu ast-nav-menu ast-flex  submenu-with-border astra-menu-animation-fade  stack-on-mobile"><!-- TODO:get_menu_for_mediawiki: mobile_menu--><!-- get_menu_for_mediawiki: mobile_menu--></ul></div></nav><!--{"menu_id":"ast-hf-mobile-menu","menu_class":"main-header-menu ast-nav-menu ast-flex  submenu-with-border astra-menu-animation-fade  stack-on-mobile","container":"div","container_class":"main-header-bar-navigation","items_wrap":"<nav class=\"ast-flex-grow-1 navigation-accessibility site-header-focus-item\" id=\"site-navigation\" aria-label=\"Site Navigation\"><div class=\"main-navigation\"><ul id=\"%1$s\" class=\"%2$s\">%3$s<\/ul><\/div><\/nav>","theme_location":"mobile_menu"}--></div>
 </div><!-- do_action:end astra_header_menu_mobile-->		</div>
 		<!-- do_action:end astra_mobile_header_content-->	</div>
 </div>
@@ -106,11 +106,7 @@ class=" mw-post" id="post-0">
 
 	<!-- do_action:start get_sidebar--><!-- do_action:end get_sidebar--><div class="widget-area secondary" id="secondary" role="complementary">
 	<div class="sidebar-main" >
-		<!-- do_action:start astra_sidebars_before--><!-- do_action:end astra_sidebars_before-->		{{#data-portlets.array-portlets-rest}}<section class="widget widget_{{id}}">
-<h2 class="widget-title">{{label}}</h2>
-<ul>{{{html-items}}}</ul>
-{{{html-after-portal}}}
-</section>{{/data-portlets.array-portlets-rest}}{{#data-portlets-sidebar.array-portlets-rest}}<section class="widget widget_{{id}}">
+		<!-- do_action:start astra_sidebars_before--><!-- do_action:end astra_sidebars_before-->		{{#data-portlets-sidebar.array-portlets-rest}}<section class="widget widget_{{id}}">
 <h2 class="widget-title">{{label}}</h2>
 <ul>{{{html-items}}}</ul>
 {{{html-after-portal}}}
@@ -133,7 +129,7 @@ class=" mw-post" id="post-0">
 		<div class="ast-container">
 			<div class="ast-small-footer-wrap" >
 									<div class="ast-small-footer-section ast-small-footer-section-1" >
-						{{>CompactFooter}}  Copyright &copy; <date>2022</date> <span class="ast-footer-site-title">{{msg-sitetitle}}</span> | Powered by <a href="https://wpastra.com/">{{msg-astra-52}}</a>					</div>
+						{{>CompactFooter}}  Copyright &copy; <date>2022</date> <span class="ast-footer-site-title">{{msg-sitetitle}}</span> | Powered by <a href="https://wpastra.com/">{{msg-astra-51}}</a>					</div>
 				
 				
 			</div><!-- .ast-row .ast-small-footer-wrap -->

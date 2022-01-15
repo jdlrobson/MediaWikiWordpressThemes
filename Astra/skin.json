@@ -28,12 +28,13 @@
             "tagline",
             "search",
             "astra-no-categories",
+            "sitetitle",
             "astra-23",
             "sitetitle",
             "astra-50",
             "categories",
             "sitetitle",
-            "astra-52"
+            "astra-51"
           ],
           "styles": [
             "mediawiki.ui.icon",
@@ -55,6 +56,7 @@
             "ast-inherit-site-logo-transparent",
             "ast-hfb-header"
           ],
+          "version": "3.6.8",
           "toc": false
         }
       ]

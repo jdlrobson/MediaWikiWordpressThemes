@@ -50,8 +50,9 @@
   "astra-48": "Previous Page",
   "astra-49": "It seems we can’t find what you’re looking for. Perhaps searching can help.",
   "astra-50": "Main Menu",
+  "astra-51": "Astra WordPress Theme",
   "astra-no-categories": "No categories",
-  "astra-52": "Astra WordPress Theme",
+  "astra-skin-desc": "A port of the Wordpress astra theme (version 3.6.8).\nBuilt via [https://skins.wmflabs.org skins.wmflabs.org].\nLast updated on Fri Jan 14 2022.",
   "skinname-astra": "Astra",
   "Astra-desc": "A skin created by [https://skins.wmflabs.org skins.wmflabs.org v.2.0]"
 }
