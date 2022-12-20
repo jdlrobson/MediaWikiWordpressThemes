@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"..."
+		]
+	},
+	"skinname-fairy": "Fairy",
+	"fairy-desc": "A skin created by [https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+	"fairy-authors": "Multiple authors",
+	"fairy-0": "Small",
+	"fairy-1": "S",
+	"fairy-2": "Medium",
+	"fairy-3": "M",
+	"fairy-4": "Large",
+	"fairy-5": "L",
+	"fairy-6": "Larger",
+	"fairy-7": "XL",
+	"fairy-skin-desc": "A port of the Wordpress fairy theme (version 1.2.0).\nBuilt via [https://skins.wmflabs.org skins.wmflabs.org].\nLast updated on Tue Dec 20 2022.",
+	"fairy-no-categories": "Uncategorized"
+}

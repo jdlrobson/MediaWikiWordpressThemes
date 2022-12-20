@@ -1,0 +1,91 @@
+{
+	"name": "Fairy",
+	"version": "1.0.0",
+	"author": [
+		"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:Fairy",
+	"descriptionmsg": "fairy-skin-desc",
+	"namemsg": "skinname-fairy",
+	"license-name": "GPL-2.0-or-later",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"ValidSkinNames": {
+		"fairy": {
+			"class": "SkinMustache",
+			"args": [
+				{
+					"name": "fairy",
+					"responsive": true,
+					"toc": false,
+					"messages": [
+						"fairy-no-categories",
+						"sitetitle",
+						"search",
+						"otherlanguages",
+						"tagline",
+						"fairy-authors"
+					],
+					"styles": [
+						"mediawiki.ui.icon",
+						"mediawiki.ui.button",
+						"skins.fairy.styles"
+					],
+					"scripts": [
+						"skins.fairy"
+					],
+					"bodyClasses": [
+						"ct-sticky-sidebar"
+					],
+					"version": "1.2.0"
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"Fairy": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.fairy.styles": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"normalize": false,
+				"elements": false,
+				"content-tables": true,
+				"content-links": false,
+				"content-media": true,
+				"content-links-external": false,
+				"interface-message-box": true,
+				"interface-category": true,
+				"toc": true
+			},
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": [
+				"resources/common.css",
+				"resources/skin.less"
+			]
+		},
+		"skins.fairy": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"packageFiles": [
+				"resources/skin.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Fairy"
+	},
+	"ResourceModuleSkinStyles": {},
+	"manifest_version": 2
+}

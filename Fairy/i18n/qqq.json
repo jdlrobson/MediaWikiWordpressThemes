@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"..."
+		]
+	},
+	"skinname-fairy": "{{optional}}",
+	"fairy-desc": "{{desc|what=skin|name=Fairy|url=https://www.mediawiki.org/wiki/Skin:Fairy}}",
+	"fairy-no-categories": "Message to show when no categories available"
+}

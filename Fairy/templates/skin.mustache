@@ -1,0 +1,151 @@
+{{>AdminBarWithEdit}}
+<div id="page" class="site">
+<!-- do_action:start fairy_before_header-->        <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+        <!-- do_action:end fairy_before_header--><!-- do_action:start fairy_header-->        <section class="search-section">
+            <div class="container">
+                <button class="close-btn"><i class="fa fa-times"></i></button>
+                {{>WPSearch}}            </div>
+        </section>
+                <header id="masthead" class="site-header text-center site-header-v2">
+                            <section class="site-header-topbar">
+                    <a href="#" class="top-header-toggle-btn">
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-sm-2-3 col-md-2-3 col-lg-2-4">
+                                <!-- do_action:start fairy_top_left-->        <nav class="site-header-top-nav">
+            <!-- wp_nav_menu: top-menu--><div class=" mw-wp-menu"><ul class="site-header-top-menu"><!-- TODO:get_menu_for_mediawiki: top-menu--><!-- get_menu_for_mediawiki: top-menu--></ul><!--{"theme_location":"top-menu","container":"ul","menu_class":"site-header-top-menu","depth":1}--></div>
+        </nav>
+        <!-- do_action:end fairy_top_left-->                            </div>
+                            <div class="col col-sm-1-3 col-md-1-3 col-lg-1-4">
+                                <div class="fairy-menu-social topbar-flex-grid">
+                                    <!-- do_action:start fairy_top_right-->        <button class="search-toggle"><i class="fa fa-search"></i></button>
+        <!-- wp_nav_menu: social-menu--><div class=" mw-wp-menu"><ul class="social-menu"><!-- TODO:get_menu_for_mediawiki: social-menu--><!-- get_menu_for_mediawiki: social-menu--></ul><!--{"theme_location":"social-menu","container":"ul","menu_class":"social-menu"}--></div>
+<!-- do_action:end fairy_top_right-->                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- do_action:start fairy_main_header--><!-- do_action:start fairy_header_default-->
+        <section id="site-navigation" class="site-header-top header-main-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-1-1">
+                        <!-- do_action:start fairy_branding-->        <div class="site-branding">
+            {{>Logo}}                <p class="site-title"><a href="{{link-mainpage}}" rel="home">{{msg-sitetitle}}</a></p>
+                            <p class="site-description">{{msg-tagline}}</p>
+                    </div><!-- .site-branding -->
+
+        <button id="menu-toggle-button" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <!-- do_action:end fairy_branding-->                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="site-header-bottom">
+            <div class="container">
+                <!-- do_action:start fairy_main_menu-->        <nav class="main-navigation">
+            <ul id="primary-menu" class="nav navbar-nav nav-menu justify-content-center">
+                <!-- wp_nav_menu: menu-1-->{{#data-portlets-sidebar.data-portlets-first}}{{{html-items}}}{{/data-portlets-sidebar.data-portlets-first}}<!-- get_menu_for_mediawiki: menu-1--><!--{"theme_location":"menu-1","items_wrap":"%3$s","container":false}-->
+                <button class="close_nav"><i class="fa fa-times"></i></button>
+            </ul>
+        </nav><!-- #site-navigation -->
+        <!-- do_action:end fairy_main_menu-->
+            </div>
+        </section>
+        <!-- do_action:end fairy_header_default--><!-- do_action:end fairy_main_header-->        </header><!-- #masthead -->
+        <!-- do_action:end fairy_header--><div id="content" class="site-content">
+    <main class="site-main">
+        <section class="single-section sec-spacing">
+            <div class="container">
+                                <div class="row ">
+                    <div id="primary" class="col-1-1 col-md-2-3">
+
+                        <!-- do_action:start fairy_breadcrumb-->                <div class="fairy-breadcrumb-wrapper">
+                    <div class="breadcrumbs init-animate clearfix"><div id="fairy-breadcrumbs" class="clearfix"><div role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb"><ul class="trail-items" itemscope="" itemtype="http://schema.org/BreadcrumbList"><meta name="numberOfItems" content="2"><meta name="itemListOrder" content="Ascending"><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item trail-begin"><a href="{{link-mainpage}}" rel="home" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item trail-end"><a href="?action=info" itemprop="item"><span itemprop="name">{{{html-title}}}</span></a><meta itemprop="position" content="2"></li></ul></div></div></div>                </div>
+                <!-- do_action:end fairy_breadcrumb-->
+                        
+<article id="post-main-article" class="post-19 post type-post status-publish format-standard hentry entry">
+    <!-- for full single column card layout add [.card-full-width] class -->
+    <div class="card card-blog-post card-full-width card-single-article">
+                <div class="card_body">
+            <div>
+            
+
+            <h1 class="card_title">{{{html-title}}}</h1>{{>LanguageButton}}
+                            <div class="entry-meta">
+                    <span class="posted-on"><i class="fa fa-calendar"></i><a href="?action=info" rel="bookmark"><time class="entry-date published">{{#data-footer.data-info.array-items}}
+    <span class="{{id}} wp-lastmod-only">
+    {{html}} </span>
+    {{/data-footer.data-info.array-items}}</time><time class="updated"></time></a></span><span class="byline"> <span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="?action=history">{{msg-fairy-authors}}</a></span></span>                </div><!-- .entry-meta -->
+                        </div>
+
+            <div class="entry-content">
+                <div id="siteNotice">{{{html-site-notice}}}</div><div id="content" class="alignwide">{{{html-body-content}}}</div><div class="alignwide">{{{html-after-content}}}</div>
+{{#data-portlets}}
+    {{>CategoryPortlet}}
+    {{/data-portlets}}
+            </div>
+            
+
+        </div>
+    </div>
+    <!-- do_action:start fairy_related_posts--><!-- do_action:end fairy_related_posts-->    <!-- Related Post Code Here -->
+
+</article><!-- #post-main-article -->
+<!-- placeholder:get_the_post_navigation -->                    </div>
+                                            <div id="secondary" class="col-12 col-md-1-3 col-lg-1-3">
+                            <!-- do_action:start get_sidebar--><!-- do_action:end get_sidebar-->
+<aside class="widget-area">
+	{{#data-portlets-sidebar.array-portlets-rest}}<section class="widget widget_{{id}} {{class}}" id="{{id}}">
+<h2 class="widget-title">{{label}}</h2>
+<ul>{{{html-items}}}</ul>
+{{{html-after-portal}}}
+</section>{{/data-portlets-sidebar.array-portlets-rest}}<!-- dynamic_sidebar:sidebar-1--></aside><!-- #secondary -->
+                        </div>
+                                        </div>
+
+            </div>
+        </section>
+    </main><!-- #main -->
+
+</div> <!-- #content -->
+<!-- do_action:start fairy_newsletter--><!-- do_action:end fairy_newsletter-->
+	<footer id="colophon" class="site-footer">
+                    <section class="site-footer-top">
+                <div class="container">
+                    <div class="row">
+                                                    <div class="col-12 col-sm-1-1 col-md-1-3">
+                                <!-- TODO dynamic_sidebar: footer-1--><!-- dynamic_sidebar:footer-1-->                            </div>
+                            
+                            <div class="col-12 col-sm-1-1 col-md-1-3">
+                                <!-- TODO dynamic_sidebar: footer-2--><!-- dynamic_sidebar:footer-2-->                            </div>
+                                                        <div class="col-12 col-sm-1-1 col-md-1-3">
+                                <!-- TODO dynamic_sidebar: footer-3--><!-- dynamic_sidebar:footer-3-->                            </div>
+                                                </div>
+                </div>
+            </section>
+            		<section class="site-footer-bottom">
+			<div class="container">
+                <div class="fairy-menu-social">
+                    <!-- do_action:start fairy_footer_social--><!-- do_action:end fairy_footer_social-->                </div>
+                <!-- do_action:start fairy_footer_info_texts-->            <div class="site-reserved text-center">
+               All Rights Reserved 2021.            </div>
+                    <div class="site-info text-center">
+            {{>CompactFooter}} <a href="https://wordpress.org/">
+                Proudly powered by WordPress            </a>
+            <span class="sep"> | </span>
+            Theme: Fairy by <a href="http://www.candidthemes.com/">Candid Themes</a>.        </div><!-- .site-info -->
+        <!-- do_action:end fairy_footer_info_texts-->			</div>
+		</section>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!-- do_action:start fairy_gototop-->            <a href="javascript:void(0);" class="footer-go-to-top go-to-top"><i class="fa fa-long-arrow-up"></i></a>
+        <!-- do_action:end fairy_gototop-->
