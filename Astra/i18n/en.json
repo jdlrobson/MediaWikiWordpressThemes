@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"..."
+			"brainstormforce",
+			"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+			"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
 		]
 	},
 	"skinname-astra": "Astra",

@@ -2,7 +2,9 @@
 	"name": "Astra",
 	"version": "1.0.0",
 	"author": [
-		"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]"
+		"brainstormforce",
+		"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+		"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
 	],
 	"url": "https://www.mediawiki.org/wiki/Skin:Astra",
 	"descriptionmsg": "astra-skin-desc",
@@ -39,6 +41,11 @@
 					],
 					"scripts": [
 						"skins.astra"
+					],
+					"authors": [
+						"brainstormforce",
+						"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+						"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
 					],
 					"bodyClasses": [
 						"ast-desktop",
