@@ -1,4 +1,10 @@
 {
-  "skinname-astra": "{{optional}}",
-  "astra-desc": "{{desc|what=skin|name=Astra|url=https://www.mediawiki.org/wiki/Skin:Astra}}"
+	"@metadata": {
+		"authors": [
+			"..."
+		]
+	},
+	"skinname-astra": "{{optional}}",
+	"astra-desc": "{{desc|what=skin|name=Astra|url=https://www.mediawiki.org/wiki/Skin:Astra}}",
+	"astra-no-categories": "Message to show when no categories available"
 }

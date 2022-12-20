@@ -1,6 +1,6 @@
+@import 'mediawiki.skin.variables';
+@import 'variables.less';
 
-@import "mediawiki.skin.variables";
-@import "variables.less";
 // stylelint-disable function-url-quotes
 // Icons from https://doc.wikimedia.org/oojs-ui/master/demos/?page=icons&theme=wikimediaui&direction=ltr&platform=desktop
 // Converted to data uri using https://yoksel.github.io/url-encoder/
@@ -25,8 +25,8 @@
 	}
 
 	.mw-adminbar-search__input {
-		color: white;
-		background: black;
+		color: #fff;
+		background: #000;
 		opacity: 1;
 	}
 
@@ -48,6 +48,7 @@
 	& + .mw-adminbar-search__input {
 		display: none;
 	}
+
 	&:checked + .mw-adminbar-search__input {
 		display: block;
 	}

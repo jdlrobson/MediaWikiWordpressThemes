@@ -1,113 +1,104 @@
 {
-  "name": "Astra",
-  "version": "1.0.0",
-  "namemsg": "skinname-astra",
-  "descriptionmsg": "astra-skin-desc",
-  "url": "https://www.mediawiki.org/wiki/Skin:Astra",
-  "author": [
-    "[https://skins.wmflabs.org skins.wmflabs.org v.2.0]"
-  ],
-  "type": "skin",
-  "requires": {
-    "MediaWiki": ">= 1.38.0"
-  },
-  "license-name": "GPL-2.0-or-later",
-  "manifest_version": 2,
-  "ValidSkinNames": {
-    "astra": {
-      "class": "SkinMustache",
-      "args": [
-        {
-          "name": "astra",
-          "responsive": true,
-          "messages": [
-            "skinname-no-categories",
-            "sitetitle",
-            "search",
-            "otherlanguages",
-            "tagline",
-            "search",
-            "astra-no-categories",
-            "sitetitle",
-            "astra-23",
-            "sitetitle",
-            "astra-50",
-            "categories",
-            "sitetitle",
-            "astra-51"
-          ],
-          "styles": [
-            "mediawiki.ui.icon",
-            "mediawiki.ui.button",
-            "skins.astra.styles"
-          ],
-          "scripts": [
-            "skins.astra"
-          ],
-          "bodyClasses": [
-            "ast-desktop",
-            "ast-separate-container",
-            "ast-right-sidebar",
-            "astra-3.6.8",
-            "ast-header-custom-item-inside",
-            "ast-blog-single-style-1",
-            "ast-custom-post-type",
-            "ast-single-post",
-            "ast-inherit-site-logo-transparent",
-            "ast-hfb-header"
-          ],
-          "version": "3.6.8",
-          "toc": false
-        }
-      ]
-    }
-  },
-  "MessagesDirs": {
-    "Astra": [
-      "i18n"
-    ]
-  },
-  "ResourceFileModulePaths": {
-    "localBasePath": "",
-    "remoteSkinPath": "Astra"
-  },
-  "ResourceModules": {
-    "skins.astra.styles": {
-      "class": "ResourceLoaderSkinModule",
-      "features": {
-        "normalize": false,
-        "elements": false,
-        "content-tables": true,
-        "content-links": false,
-        "content-media": false,
-        "content-links-external": false,
-        "interface-message-box": true,
-        "interface-category": false,
-        "toc": true
-      },
-      "targets": [
-        "desktop",
-        "mobile"
-      ],
-      "styles": [
-        "resources/common.css",
-        "resources/skin.less"
-      ]
-    },
-    "skins.astra": {
-      "targets": [
-        "desktop",
-        "mobile"
-      ],
-      "packageFiles": [
-        "resources/skin.js"
-      ]
-    }
-  },
-  "Hooks": {
-    "OutputPageBodyAttributes": "Astra\\Hooks::onOutputPageBodyAttributes"
-  },
-  "AutoloadNamespaces": {
-    "Astra\\": "includes/"
-  }
+	"name": "Astra",
+	"version": "1.0.0",
+	"author": [
+		"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:Astra",
+	"descriptionmsg": "astra-skin-desc",
+	"namemsg": "skinname-astra",
+	"license-name": "GPL-2.0-or-later",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"ValidSkinNames": {
+		"astra": {
+			"class": "SkinMustache",
+			"args": [
+				{
+					"name": "astra",
+					"responsive": true,
+					"toc": false,
+					"messages": [
+						"astra-no-categories",
+						"sitetitle",
+						"search",
+						"otherlanguages",
+						"tagline",
+						"astra-23",
+						"astra-50",
+						"astra-44",
+						"astra-authors",
+						"astra-52"
+					],
+					"styles": [
+						"mediawiki.ui.icon",
+						"mediawiki.ui.button",
+						"skins.astra.styles"
+					],
+					"scripts": [
+						"skins.astra"
+					],
+					"bodyClasses": [
+						"ast-desktop",
+						"ast-separate-container",
+						"ast-right-sidebar",
+						"astra-3.6.8",
+						"ast-header-custom-item-inside",
+						"group-blog",
+						"ast-blog-single-style-1",
+						"ast-single-post",
+						"ast-inherit-site-logo-transparent",
+						"ast-hfb-header"
+					],
+					"version": "3.6.8"
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"Astra": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.astra.styles": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"normalize": false,
+				"elements": false,
+				"content-tables": true,
+				"content-links": false,
+				"content-media": true,
+				"content-links-external": false,
+				"interface-message-box": true,
+				"interface-category": true,
+				"toc": true
+			},
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": [
+				"resources/common.css",
+				"resources/skin.less"
+			]
+		},
+		"skins.astra": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"packageFiles": [
+				"resources/skin.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Astra"
+	},
+	"ResourceModuleSkinStyles": {},
+	"manifest_version": 2
 }
