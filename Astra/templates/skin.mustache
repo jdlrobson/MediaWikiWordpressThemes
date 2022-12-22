@@ -88,7 +88,7 @@
 	<div class="entry-content clear">
 
 		<!-- do_action:start astra_entry_content_before--><!-- do_action:end astra_entry_content_before-->
-		<div id="siteNotice">{{{html-site-notice}}}</div><div id="content" class="alignwide">{{{html-body-content}}}</div><div class="alignwide">{{{html-after-content}}}</div>
+		<div id="siteNotice">{{{html-site-notice}}}</div><div id="content">{{{html-body-content}}}</div><div>{{{html-after-content}}}</div>
 
 		
 		<!-- do_action:start astra_entry_content_after--><!-- do_action:end astra_entry_content_after-->
@@ -109,7 +109,8 @@
 
 	<!-- do_action:start get_sidebar--><!-- do_action:end get_sidebar--><div class="widget-area secondary" id="secondary" role="complementary">
 	<div class="sidebar-main">
-		<!-- do_action:start astra_sidebars_before--><!-- do_action:end astra_sidebars_before-->		{{#data-portlets-sidebar.array-portlets-rest}}<section class="widget widget_{{id}} {{class}}" id="{{id}}">
+		<!-- do_action:start astra_sidebars_before--><!-- do_action:end astra_sidebars_before-->		{{#data-portlets-sidebar.array-portlets-rest}}<!-- echowidget -->
+<section class="widget widget_{{id}} {{class}}" id="{{id}}">
 <h2 class="widget-title">{{label}}</h2>
 <ul>{{{html-items}}}</ul>
 {{{html-after-portal}}}
@@ -130,10 +131,7 @@
 		<div class="ast-container">
 			<div class="ast-small-footer-wrap">
 									<div class="ast-small-footer-section ast-small-footer-section-1">
-						{{>CompactFooter}}  Copyright © {{#data-footer.data-info.array-items}}
-    <span class="{{id}} wp-lastmod-only">
-    {{html}} </span>
-    {{/data-footer.data-info.array-items}} <span class="ast-footer-site-title">{{msg-sitetitle}}</span> | Powered by <a href="https://wpastra.com/">{{msg-astra-52}}</a>					</div>
+						{{>CompactFooter}}  Copyright © {{>LastModifiedLine}} <span class="ast-footer-site-title">{{msg-sitetitle}}</span> | Powered by <a href="https://wpastra.com/">{{msg-astra-52}}</a>					</div>
 				
 				
 			</div><!-- .ast-row .ast-small-footer-wrap -->
@@ -146,4 +144,4 @@
 		<footer class="site-footer" id="colophon">
 	<!-- do_action:start astra_footer_content_top--><!-- do_action:end astra_footer_content_top-->		<!-- do_action:start astra_above_footer--><!-- do_action:end astra_above_footer--><!-- do_action:start astra_primary_footer--><!-- do_action:end astra_primary_footer--><!-- do_action:start astra_below_footer--><!-- do_action:end astra_below_footer-->	<!-- do_action:start astra_footer_content_bottom--><!-- do_action:end astra_footer_content_bottom--></footer><!-- #colophon -->
 <!-- do_action:end astra_footer--><!-- do_action:start astra_footer_after--><!-- do_action:end astra_footer_after-->	</div><!-- #page -->
-<!-- do_action:start astra_body_bottom--><!-- do_action:end astra_body_bottom-->	
+<!-- do_action:start astra_body_bottom--><!-- do_action:end astra_body_bottom-->	<!-- do_action:start wp_footer--><!-- do_action:end wp_footer-->

@@ -55,6 +55,7 @@ module = undefined; exports = undefined;
     link.addEventListener("touchstart", toggleFocus, false);
   }
 }());
+$(($('a[href="#t-permalink"]').each((i, a) => $(a).prop("href", $("#t-permalink a").attr("href"))), void null));
 (function () {
   var $ = jQuery;
   $.fn.theiaStickySidebar = function (options) {
@@ -251,6 +252,7 @@ module = undefined; exports = undefined;
     tryInitOrHookIntoEvents(options, this);
   };
 }());
+$(($('a[href="#t-permalink"]').each((i, a) => $(a).prop("href", $("#t-permalink a").attr("href"))), void null));
 (function () {
   var factory = function ($) {
     "use strict";
@@ -2103,6 +2105,7 @@ module = undefined; exports = undefined;
     module.exports = factory(require("jquery"));
   }
 }());
+$(($('a[href="#t-permalink"]').each((i, a) => $(a).prop("href", $("#t-permalink a").attr("href"))), void null));
 (function () {
   jQuery(document).ready(function ($) {
     function addMobileAccessBtn() {
@@ -2239,3 +2242,8 @@ module = undefined; exports = undefined;
     }
   });
 }());
+$(($('a[href="#t-permalink"]').each((i, a) => $(a).prop("href", $("#t-permalink a").attr("href"))), void null));
+$(($('a[href="#t-permalink"]').each((i, a) => $(a).prop("href", $("#t-permalink a").attr("href"))), void null));
+$(($('a[href="#t-permalink"]').each((i, a) => $(a).prop("href", $("#t-permalink a").attr("href"))), void null));
+$(($('a[href="#t-permalink"]').each((i, a) => $(a).prop("href", $("#t-permalink a").attr("href"))), void null));
+$(($('a[href="#t-permalink"]').each((i, a) => $(a).prop("href", $("#t-permalink a").attr("href"))), void null));

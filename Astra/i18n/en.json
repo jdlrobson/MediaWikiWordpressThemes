@@ -62,6 +62,6 @@
 	"astra-50": "Main Menu",
 	"astra-51": ", ",
 	"astra-52": "Astra WordPress Theme",
-	"astra-skin-desc": "A port of the Wordpress astra theme (version 3.6.8).\nBuilt via [https://skins.wmflabs.org skins.wmflabs.org].\nLast updated on Tue Dec 20 2022.",
+	"astra-skin-desc": "A port of the Wordpress astra theme (version 3.6.8).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.1.0].\nLast updated on Thu Dec 22 2022.",
 	"astra-no-categories": "Uncategorized"
 }

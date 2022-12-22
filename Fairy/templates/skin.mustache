@@ -15,13 +15,13 @@
                         <div class="row">
                             <div class="col col-sm-2-3 col-md-2-3 col-lg-2-4">
                                 <!-- do_action:start fairy_top_left-->        <nav class="site-header-top-nav">
-            <!-- wp_nav_menu: top-menu--><div class=" mw-wp-menu"><ul class="site-header-top-menu"><!-- TODO:get_menu_for_mediawiki: top-menu--><!-- get_menu_for_mediawiki: top-menu--></ul><!--{"theme_location":"top-menu","container":"ul","menu_class":"site-header-top-menu","depth":1}--></div>
+            <!-- wp_nav_menu: top-menu--><div class=" mw-wp-menu"><ul id="top-menu-menu" class="menu site-header-top-menu"><!-- TODO:get_menu_for_mediawiki: top-menu--><!-- get_menu_for_mediawiki: top-menu--></ul><!--{"theme_location":"top-menu","container":"ul","menu_class":"site-header-top-menu","depth":1}--></div>
         </nav>
         <!-- do_action:end fairy_top_left-->                            </div>
                             <div class="col col-sm-1-3 col-md-1-3 col-lg-1-4">
                                 <div class="fairy-menu-social topbar-flex-grid">
                                     <!-- do_action:start fairy_top_right-->        <button class="search-toggle"><i class="fa fa-search"></i></button>
-        <!-- wp_nav_menu: social-menu--><div class=" mw-wp-menu"><ul class="social-menu"><!-- TODO:get_menu_for_mediawiki: social-menu--><!-- get_menu_for_mediawiki: social-menu--></ul><!--{"theme_location":"social-menu","container":"ul","menu_class":"social-menu"}--></div>
+        <!-- wp_nav_menu: social-menu--><div class=" mw-wp-menu"><ul id="social-menu-menu" class="menu social-menu"><!-- TODO:get_menu_for_mediawiki: social-menu--><!-- get_menu_for_mediawiki: social-menu--></ul><!--{"theme_location":"social-menu","container":"ul","menu_class":"social-menu"}--></div>
 <!-- do_action:end fairy_top_right-->                                </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                     <div id="primary" class="col-1-1 col-md-2-3">
 
                         <!-- do_action:start fairy_breadcrumb-->                <div class="fairy-breadcrumb-wrapper">
-                    <div class="breadcrumbs init-animate clearfix"><div id="fairy-breadcrumbs" class="clearfix"><div role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb"><ul class="trail-items" itemscope="" itemtype="http://schema.org/BreadcrumbList"><meta name="numberOfItems" content="2"><meta name="itemListOrder" content="Ascending"><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item trail-begin"><a href="{{link-mainpage}}" rel="home" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item trail-end"><a href="?action=info" itemprop="item"><span itemprop="name">{{{html-title}}}</span></a><meta itemprop="position" content="2"></li></ul></div></div></div>                </div>
+                    <div class="breadcrumbs init-animate clearfix"><div id="fairy-breadcrumbs" class="clearfix"><div role="navigation" aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb"><ul class="trail-items" itemscope="" itemtype="http://schema.org/BreadcrumbList"><meta name="numberOfItems" content="2"><meta name="itemListOrder" content="Ascending"><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item trail-begin"><a href="{{link-mainpage}}" rel="home" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="trail-item trail-end"><a href="#t-permalink" itemprop="item"><span itemprop="name">{{{html-title}}}</span></a><meta itemprop="position" content="2"></li></ul></div></div></div>                </div>
                 <!-- do_action:end fairy_breadcrumb-->
                         
 <article id="post-main-article" class="post-19 post type-post status-publish format-standard hentry entry">
@@ -80,14 +80,11 @@
 
             <h1 class="card_title">{{{html-title}}}</h1>{{>LanguageButton}}
                             <div class="entry-meta">
-                    <span class="posted-on"><i class="fa fa-calendar"></i><a href="?action=info" rel="bookmark"><time class="entry-date published">{{#data-footer.data-info.array-items}}
-    <span class="{{id}} wp-lastmod-only">
-    {{html}} </span>
-    {{/data-footer.data-info.array-items}}</time><time class="updated"></time></a></span><span class="byline"> <span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="?action=history">{{msg-fairy-authors}}</a></span></span>                </div><!-- .entry-meta -->
+                    <span class="posted-on"><i class="fa fa-calendar"></i><a href="#t-permalink" rel="bookmark"><time class="entry-date published">{{>LastModifiedLine}}</time><time class="updated"></time></a></span><span class="byline"> <span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="?action=history">{{msg-fairy-authors}}</a></span></span>                </div><!-- .entry-meta -->
                         </div>
 
             <div class="entry-content">
-                <div id="siteNotice">{{{html-site-notice}}}</div><div id="content" class="alignwide">{{{html-body-content}}}</div><div class="alignwide">{{{html-after-content}}}</div>
+                <div id="siteNotice">{{{html-site-notice}}}</div><div id="content">{{{html-body-content}}}</div><div>{{{html-after-content}}}</div>
 {{#data-portlets}}
     {{>CategoryPortlet}}
     {{/data-portlets}}
@@ -103,7 +100,8 @@
                                             <div id="secondary" class="col-12 col-md-1-3 col-lg-1-3">
                             <!-- do_action:start get_sidebar--><!-- do_action:end get_sidebar-->
 <aside class="widget-area">
-	{{#data-portlets-sidebar.array-portlets-rest}}<section class="widget widget_{{id}} {{class}}" id="{{id}}">
+	{{#data-portlets-sidebar.array-portlets-rest}}<!-- echowidget -->
+<section class="widget widget_{{id}} {{class}}" id="{{id}}">
 <h2 class="widget-title">{{label}}</h2>
 <ul>{{{html-items}}}</ul>
 {{{html-after-portal}}}
@@ -149,3 +147,4 @@
 
 <!-- do_action:start fairy_gototop-->            <a href="javascript:void(0);" class="footer-go-to-top go-to-top"><i class="fa fa-long-arrow-up"></i></a>
         <!-- do_action:end fairy_gototop-->
+<!-- do_action:start wp_footer--><!-- do_action:end wp_footer-->
