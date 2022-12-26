@@ -57,7 +57,8 @@
 						"ast-blog-single-style-1",
 						"ast-single-post",
 						"ast-inherit-site-logo-transparent",
-						"ast-hfb-header"
+						"ast-hfb-header",
+						"single-post"
 					],
 					"version": "3.6.8"
 				}

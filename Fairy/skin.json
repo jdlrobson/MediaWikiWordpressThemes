@@ -44,7 +44,8 @@
 						"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
 					],
 					"bodyClasses": [
-						"ct-sticky-sidebar"
+						"ct-sticky-sidebar",
+						"single-post"
 					],
 					"version": "1.2.0"
 				}
