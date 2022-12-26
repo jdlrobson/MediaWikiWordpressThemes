@@ -1,0 +1,29 @@
+{{>AdminBarWithEdit}}<!-- generated-from:index-->
+
+<header id="site-header" class="site-header" role="banner">
+
+	<div class="site-branding">
+		{{>Logo}}	</div>
+
+			<nav class="site-navigation" role="navigation">
+			<!-- wp_nav_menu: menu-1--><div class=" mw-wp-menu"><ul id="menu-1-menu" class="menu ">{{#data-portlets-sidebar.data-portlets-first}}{{{html-items}}}{{/data-portlets-sidebar.data-portlets-first}}<!-- get_menu_for_mediawiki: menu-1--></ul><!--{"theme_location":"menu-1","fallback_cb":false,"echo":false}--></div>		</nav>
+	</header>
+
+<main class="site-main" role="main">
+			<header class="page-header">
+			<h1 class="entry-title">{{{html-title}}}</h1>{{>LanguageButton}}
+		</header>
+		<div class="page-content">
+		<div id="siteNotice">{{{html-site-notice}}}</div><div id="content">{{{html-body-content}}}</div><div>{{{html-after-content}}}</div>
+		<div class="post-tags">
+			<span class="tag-links">{{msg-hello-elementor-0}}{{>CategoryPlain}}
+		</span></div>
+		<!-- placeholder:categories -->	</div>
+
+	{{{html-after-content}}}
+</main>
+
+	<footer id="site-footer" class="site-footer" role="contentinfo">{{>CompactFooter}}</footer>
+
+
+<!-- do_action:start wp_footer--><!-- do_action:end wp_footer-->

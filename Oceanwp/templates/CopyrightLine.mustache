@@ -1,0 +1,19 @@
+<span class="skin-copyright-line">
+    {{! this typically contains elements other than last modified}}
+    {{#data-footer.data-info.array-items}}
+    <span class="skin-copyright-line-{{id}}">{{{html}}}</span>
+    {{/data-footer.data-info.array-items}}
+</span>
+<style type="text/css">
+.skin-copyright-line > span { display: none; }
+.skin-copyright-line > span.skin-copyright-line-footer-info-lastmod { display: inherit; }
+</style>
+<script type="text/javascript">
+try {
+    document.querySelectorAll( '.skin-copyright-line > .skin-copyright-line-footer-info-copyright' ).forEach(function ( node ) {
+        node.parentNode.innerHTML = node.innerHTML;
+    } );
+} catch ( e ) {
+
+}
+</script>

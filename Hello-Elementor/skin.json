@@ -1,0 +1,108 @@
+{
+	"name": "Hello-Elementor",
+	"version": "1.0.0",
+	"author": [
+		"elemntor",
+		" KingYes",
+		" ariel.k",
+		" jzaltzberg",
+		" mati1000",
+		" bainternet",
+		"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+		"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:Hello-Elementor",
+	"descriptionmsg": "hello-elementor-skin-desc",
+	"namemsg": "skinname-hello-elementor",
+	"license-name": "GPL-2.0-or-later",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"ValidSkinNames": {
+		"hello-elementor": {
+			"class": "SkinMustache",
+			"args": [
+				{
+					"name": "hello-elementor",
+					"responsive": true,
+					"toc": false,
+					"messages": [
+						"hello-elementor-no-categories",
+						"sitetitle",
+						"search",
+						"otherlanguages",
+						"tagline",
+						"hello-elementor-0"
+					],
+					"styles": [
+						"mediawiki.ui.icon",
+						"mediawiki.ui.button",
+						"skins.hello-elementor.styles"
+					],
+					"scripts": [
+						"skins.hello-elementor"
+					],
+					"authors": [
+						"elemntor",
+						" KingYes",
+						" ariel.k",
+						" jzaltzberg",
+						" mati1000",
+						" bainternet",
+						"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+						"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
+					],
+					"bodyClasses": [
+						"single-post"
+					],
+					"version": "2.4.1"
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"Hello-Elementor": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.hello-elementor.styles": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"normalize": false,
+				"elements": false,
+				"content-tables": true,
+				"content-links": false,
+				"content-media": true,
+				"content-links-external": false,
+				"interface-message-box": true,
+				"interface-category": false,
+				"toc": true
+			},
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": [
+				"resources/common.css",
+				"resources/skin.less"
+			]
+		},
+		"skins.hello-elementor": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"packageFiles": [
+				"resources/skin.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Hello-Elementor"
+	},
+	"ResourceModuleSkinStyles": {},
+	"manifest_version": 2
+}

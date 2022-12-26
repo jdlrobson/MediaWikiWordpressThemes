@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"elemntor",
+			" KingYes",
+			" ariel.k",
+			" jzaltzberg",
+			" mati1000",
+			" bainternet",
+			"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+			"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
+		]
+	},
+	"skinname-hello-elementor": "{{optional}}",
+	"hello-elementor-desc": "{{desc|what=skin|name=Hello-Elementor|url=https://www.mediawiki.org/wiki/Skin:Hello-Elementor}}"
+}

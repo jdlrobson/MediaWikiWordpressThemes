@@ -1,0 +1,109 @@
+{
+	"name": "Oceanwp",
+	"version": "1.0.0",
+	"author": [
+		"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+		"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:Oceanwp",
+	"descriptionmsg": "oceanwp-skin-desc",
+	"namemsg": "skinname-oceanwp",
+	"license-name": "GPL-2.0-or-later",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"ValidSkinNames": {
+		"oceanwp": {
+			"class": "SkinMustache",
+			"args": [
+				{
+					"name": "oceanwp",
+					"responsive": true,
+					"toc": false,
+					"messages": [
+						"oceanwp-no-categories",
+						"sitetitle",
+						"search",
+						"otherlanguages",
+						"tagline",
+						"oceanwp-0",
+						"oceanwp-32",
+						"oceanwp-31",
+						"oceanwp-1",
+						"oceanwp-30",
+						"history_short",
+						"oceanwp-34"
+					],
+					"styles": [
+						"mediawiki.ui.icon",
+						"mediawiki.ui.button",
+						"skins.oceanwp.styles"
+					],
+					"scripts": [
+						"skins.oceanwp"
+					],
+					"authors": [
+						"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+						"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
+					],
+					"bodyClasses": [
+						"oceanwp-theme",
+						"dropdown-mobile",
+						"default-breakpoint",
+						"has-sidebar",
+						"content-right-sidebar",
+						"has-topbar",
+						"has-breadcrumbs",
+						"single-post"
+					],
+					"version": "3.3.6"
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"Oceanwp": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.oceanwp.styles": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"normalize": false,
+				"elements": false,
+				"content-tables": true,
+				"content-links": false,
+				"content-media": true,
+				"content-links-external": false,
+				"interface-message-box": true,
+				"interface-category": false,
+				"toc": true
+			},
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": [
+				"resources/common.css",
+				"resources/skin.less"
+			]
+		},
+		"skins.oceanwp": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"packageFiles": [
+				"resources/skin.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Oceanwp"
+	},
+	"ResourceModuleSkinStyles": {},
+	"manifest_version": 2
+}
