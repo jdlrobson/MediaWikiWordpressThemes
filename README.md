@@ -12,9 +12,9 @@ https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin
 All skins make use of JS polyfills to provide last modified timestamp and history URL:
 - last modified timestamp {{meta.last-modified-timestamp}}
 - history link {{meta.history-url}}
+- #t-permalink replaced with permalink URL. meta.permalink-url
 
-
-## Astra
+## [Ported] Astra
 https://wordpress.org/themes/astra/
 
 ## [Ported] Fairy
