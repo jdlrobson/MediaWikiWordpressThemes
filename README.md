@@ -11,3 +11,33 @@ https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin
 
 ## Astra
 https://wordpress.org/themes/astra/
+
+''Polyfills''
+
+- history link {{meta.history-url}}
+
+## [Ported] Fairy
+https://wordpress.org/themes/fairy
+
+''Polyfills''
+
+- last modified timestamp {{meta.last-modified-timestamp}}
+- history link {{meta.history-url}}
+
+## [Ported] Hello elementor
+https://wordpress.org/themes/hello-elementor
+
+## [Ported] OceanWP
+https://wordpress.org/themes/oceanwp/
+
+''Polyfills''
+
+- last modified timestamp {{meta.last-modified-timestamp}}
+- history link {{meta.history-url}}
+
+## [Ported] Neve
+https://wordpress.org/themes/neve
+
+''Polyfills''
+- last modified timestamp {{meta.last-modified-timestamp}}
+- history link {{meta.history-url}}
