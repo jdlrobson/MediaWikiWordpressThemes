@@ -2,6 +2,7 @@
 	"name": "Popularfx",
 	"version": "1.0.0",
 	"author": [
+		"pagelayer",
 		"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
 		"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
 	],
@@ -39,6 +40,7 @@
 						"skins.popularfx"
 					],
 					"authors": [
+						"pagelayer",
 						"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
 						"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
 					],

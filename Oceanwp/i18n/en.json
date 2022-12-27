@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"oceanwp",
 			"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
 			"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
 		]
@@ -53,5 +54,5 @@
 	"oceanwp-42": "View previous product",
 	"oceanwp-no-categories": "Uncategorized",
 	"oceanwp-44": "Pages:",
-	"oceanwp-skin-desc": "A port of the Wordpress oceanwp theme (version 3.3.6).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.8.1].\nLast updated on Tue Dec 27 2022."
+	"oceanwp-skin-desc": "A port of the Wordpress oceanwp theme (version 3.3.6).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.8.2].\nLast updated on Tue Dec 27 2022."
 }

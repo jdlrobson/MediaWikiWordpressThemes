@@ -2,11 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"elemntor",
-			" KingYes",
-			" ariel.k",
-			" jzaltzberg",
-			" mati1000",
-			" bainternet",
+			"KingYes",
+			"ariel.k",
+			"jzaltzberg",
+			"mati1000",
+			"bainternet",
 			"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
 			"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
 		]
@@ -16,5 +16,5 @@
 	"hello-elementor-authors": "Multiple authors",
 	"hello-elementor-0": "Tagged ",
 	"hello-elementor-no-categories": "Uncategorized",
-	"hello-elementor-skin-desc": "A port of the Wordpress hello-elementor theme (version 2.4.1).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.8.1].\nLast updated on Tue Dec 27 2022."
+	"hello-elementor-skin-desc": "A port of the Wordpress hello-elementor theme (version 2.4.1).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.8.2].\nLast updated on Tue Dec 27 2022."
 }
