@@ -68,7 +68,7 @@
 				"content-media": true,
 				"content-links-external": false,
 				"interface-message-box": true,
-				"interface-category": true,
+				"interface-category": false,
 				"toc": true
 			},
 			"targets": [

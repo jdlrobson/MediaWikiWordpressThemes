@@ -53,6 +53,7 @@
 						"default-breakpoint",
 						"has-sidebar",
 						"content-right-sidebar",
+						"post-in-category-",
 						"has-topbar",
 						"has-breadcrumbs",
 						"single-post"
