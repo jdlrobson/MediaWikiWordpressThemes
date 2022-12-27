@@ -45,7 +45,8 @@
 					],
 					"bodyClasses": [
 						"ct-sticky-sidebar",
-						"single-post"
+						"single-post",
+						"single"
 					],
 					"version": "1.2.0"
 				}
