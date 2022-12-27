@@ -9,20 +9,16 @@ once it is more stable.
 Skins are built using the Wordpress Theme to MediaWiki skin conversion tool:
 https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin
 
+All skins make use of JS polyfills to provide last modified timestamp and history URL:
+- last modified timestamp {{meta.last-modified-timestamp}}
+- history link {{meta.history-url}}
+
+
 ## Astra
 https://wordpress.org/themes/astra/
 
-''Polyfills''
-
-- history link {{meta.history-url}}
-
 ## [Ported] Fairy
 https://wordpress.org/themes/fairy
-
-''Polyfills''
-
-- last modified timestamp {{meta.last-modified-timestamp}}
-- history link {{meta.history-url}}
 
 ## [Ported] Hello elementor
 https://wordpress.org/themes/hello-elementor
@@ -30,14 +26,11 @@ https://wordpress.org/themes/hello-elementor
 ## [Ported] OceanWP
 https://wordpress.org/themes/oceanwp/
 
-''Polyfills''
-
-- last modified timestamp {{meta.last-modified-timestamp}}
-- history link {{meta.history-url}}
-
 ## [Ported] Neve
 https://wordpress.org/themes/neve
 
-''Polyfills''
-- last modified timestamp {{meta.last-modified-timestamp}}
-- history link {{meta.history-url}}
+## [Ported] Kadence
+https://wordpress.org/themes/kadence
+
+## [Ported] PopularFx
+https://wordpress.org/themes/popularfx

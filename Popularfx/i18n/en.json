@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+			"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
+		]
+	},
+	"skinname-popularfx": "Popularfx",
+	"popularfx-desc": "A skin created by [https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+	"popularfx-authors": "Multiple authors",
+	"popularfx-0": "Primary Menu",
+	"popularfx-1": "PopularFX Theme",
+	"popularfx-skin-desc": "A port of the Wordpress popularfx theme (version 1.2.2).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.3.0].\nLast updated on Tue Dec 27 2022.",
+	"popularfx-no-categories": "Uncategorized"
+}

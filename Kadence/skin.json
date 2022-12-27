@@ -1,0 +1,107 @@
+{
+	"name": "Kadence",
+	"version": "1.0.0",
+	"author": [
+		"britner",
+		"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+		"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:Kadence",
+	"descriptionmsg": "kadence-skin-desc",
+	"namemsg": "skinname-kadence",
+	"license-name": "GPL-2.0-or-later",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"ValidSkinNames": {
+		"kadence": {
+			"class": "SkinMustache",
+			"args": [
+				{
+					"name": "kadence",
+					"responsive": true,
+					"toc": false,
+					"messages": [
+						"kadence-no-categories",
+						"sitetitle",
+						"search",
+						"otherlanguages",
+						"tagline"
+					],
+					"styles": [
+						"mediawiki.ui.icon",
+						"mediawiki.ui.button",
+						"skins.kadence.styles"
+					],
+					"scripts": [
+						"skins.kadence"
+					],
+					"authors": [
+						"britner",
+						"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+						"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
+					],
+					"bodyClasses": [
+						"footer-on-bottom",
+						"animate-body-popup",
+						"hide-focus-outline",
+						"link-style-standard",
+						"content-title-style-normal",
+						"content-width-narrow",
+						"content-style-boxed",
+						"content-vertical-padding-show",
+						"non-transparent-header",
+						"mobile-non-transparent-header",
+						"single-post"
+					],
+					"version": "1.1.31"
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"Kadence": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.kadence.styles": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"normalize": false,
+				"elements": false,
+				"content-tables": true,
+				"content-links": false,
+				"content-media": true,
+				"content-links-external": false,
+				"interface-message-box": true,
+				"interface-category": false,
+				"toc": true
+			},
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": [
+				"resources/common.css",
+				"resources/skin.less"
+			]
+		},
+		"skins.kadence": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"packageFiles": [
+				"resources/skin.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Kadence"
+	},
+	"ResourceModuleSkinStyles": {},
+	"manifest_version": 2
+}

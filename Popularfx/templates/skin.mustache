@@ -1,0 +1,55 @@
+{{>AdminBar}}<!-- generated-from:single-->
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
+
+	<header id="masthead" class="site-header">
+		<div class="site-branding">
+			{{>Logo}}				<p class="site-title"><a href="{{link-mainpage}}" rel="home">{{msg-sitetitle}}</a></p>
+								<p class="site-description">{{msg-tagline}}</p>
+					</div><!-- .site-branding -->
+		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="dashicons dashicons-menu-alt2"></span></button>
+		<nav id="site-navigation" class="main-navigation hidden-mobile">
+			
+			<!-- wp_nav_menu: primary--><div class=" mw-wp-menu"><ul id="primary-menu" class="menu ">{{#data-portlets-sidebar.data-portlets-first}}{{{html-items}}}{{/data-portlets-sidebar.data-portlets-first}}<!-- get_menu_for_mediawiki: primary--></ul><!--{"theme_location":"primary","menu_id":"primary-menu"}--></div>
+		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+
+	<main id="primary" class="site-main">
+
+		
+<article class="article" id="post-main-article">	
+	<header class="entry-header">
+		<h1 class="entry-title">{{{html-title}}}</h1>{{>LanguageButton}}
+			<div class="entry-meta">
+				<span class="posted-on">Posted on <a href="#t-permalink" rel="bookmark"><time class="entry-date published">{{>LastModifiedLine}}</time><time class="updated"></time></a></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="?action=history">{{msg-popularfx-authors}}</a></span></span>			</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	
+	<div class="entry-content">
+		<div id="siteNotice">{{{html-site-notice}}}</div><div id="content">{{{html-body-content}}}</div><div>{{{html-after-content}}}</div>
+<!-- placeholder:categories -->	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="cat-links">Posted in {{#data-portlets.data-category-normal.array-items}}{{{html}}} {{/data-portlets.data-category-normal.array-items}}</span>{{>EditBar}}	</footer><!-- .entry-footer -->
+</article><!-- #post-main-article -->
+<!-- placeholder:get_the_post_navigation -->
+	</main><!-- #main -->
+
+<!-- do_action:start get_sidebar--><!-- do_action:end get_sidebar--><aside id="secondary" class="widget-area">
+	{{#data-portlets-sidebar.array-portlets-rest}}<!-- echowidget -->
+<section class="widget widget_{{id}} {{class}}" id="{{id}}">
+<h2 class="widget-title">{{label}}</h2>
+<ul>{{{html-items}}}</ul>
+{{{html-after-portal}}}
+</section>{{/data-portlets-sidebar.array-portlets-rest}}<!-- dynamic_sidebar:sidebar-1--></aside><!-- #secondary -->
+	<footer id="colophon" class="site-footer">
+		<div class="site-info">
+						{{>CompactFooter}} <a href="https://wordpress.org/">
+				Proudly powered by WordPress			</a>
+			<span class="sep"> | </span>
+			<a href="https://popularfx.com">{{msg-popularfx-1}}</a>					</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+
+<!-- do_action:start wp_footer--><!-- do_action:end wp_footer--><link rel="stylesheet" href="https://developer.wordpress.org/wp-includes/css/dashicons.min.css?ver=6.0-alpha-52573">

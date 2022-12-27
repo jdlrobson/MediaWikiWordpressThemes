@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+			"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
+		]
+	},
+	"skinname-popularfx": "{{optional}}",
+	"popularfx-desc": "{{desc|what=skin|name=Popularfx|url=https://www.mediawiki.org/wiki/Skin:Popularfx}}",
+	"popularfx-no-categories": "Message to show when no categories available"
+}
