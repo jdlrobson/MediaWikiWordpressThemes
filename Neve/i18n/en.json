@@ -6,7 +6,7 @@
 		]
 	},
 	"skinname-neve": "Neve",
-	"neve-desc": "A skin created by [https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+	"neve-desc": "A skin created by [https://skins.wmflabs.org skins.wmflabs.org v.3.0]",
 	"neve-authors": "Multiple authors",
 	"neve-0": "Primary Accent",
 	"neve-1": "Secondary Accent",
@@ -93,6 +93,6 @@
 	"neve-82": "Currency Symbol",
 	"neve-83": "Base",
 	"neve-84": "Dark Mode",
-	"neve-skin-desc": "A port of the Wordpress neve theme (version trunk).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.6.1].\nLast updated on Tue Dec 27 2022.",
+	"neve-skin-desc": "A port of the Wordpress neve theme (version trunk).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.7.0].\nLast updated on Tue Dec 27 2022.",
 	"neve-no-categories": "Uncategorized"
 }

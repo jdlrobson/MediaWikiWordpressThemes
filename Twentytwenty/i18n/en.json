@@ -7,7 +7,7 @@
 		]
 	},
 	"skinname-twentytwenty": "Twentytwenty",
-	"twentytwenty-desc": "A skin created by [https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+	"twentytwenty-desc": "A skin created by [https://skins.wmflabs.org skins.wmflabs.org v.3.0]",
 	"twentytwenty-authors": "Multiple authors",
 	"twentytwenty-0": "<em>Dates</em><br>Aug 1 — Dec 1",
 	"twentytwenty-1": "<em>Location</em><br>Exhibit Hall B",
@@ -19,5 +19,5 @@
 	"twentytwenty-no-categories": "Uncategorized",
 	"twentytwenty-8": "Continue reading",
 	"twentytwenty-9": "Pages:",
-	"twentytwenty-skin-desc": "A port of the Wordpress twentytwenty theme (version 1.8).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.6.1].\nLast updated on Tue Dec 27 2022."
+	"twentytwenty-skin-desc": "A port of the Wordpress twentytwenty theme (version 1.8).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.7.0].\nLast updated on Tue Dec 27 2022."
 }

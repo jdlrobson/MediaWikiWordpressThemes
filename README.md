@@ -16,9 +16,11 @@ All skins make use of JS polyfills to provide last modified timestamp and histor
 
 ## [Ported] Astra
 https://wordpress.org/themes/astra/
+https://mediawiki.org/wiki/Skin:Astra
 
 ## [Ported] Fairy
 https://wordpress.org/themes/fairy
+https://mediawiki.org/wiki/Skin:Fairy
 
 ## [Ported] Hello elementor
 https://wordpress.org/themes/hello-elementor

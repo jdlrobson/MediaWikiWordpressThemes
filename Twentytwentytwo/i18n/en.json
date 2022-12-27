@@ -6,7 +6,7 @@
 		]
 	},
 	"skinname-twentytwentytwo": "Twentytwentytwo",
-	"twentytwentytwo-desc": "A skin created by [https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+	"twentytwentytwo-desc": "A skin created by [https://skins.wmflabs.org skins.wmflabs.org v.3.0]",
 	"twentytwentytwo-authors": "Multiple authors",
 	"twentytwentytwo-0": "Featured",
 	"twentytwentytwo-1": "Footers",
@@ -96,5 +96,5 @@
 	"twentytwentytwo-85": "Large post titles",
 	"twentytwentytwo-86": "Irregular grid of posts",
 	"twentytwentytwo-no-categories": "Uncategorized",
-	"twentytwentytwo-skin-desc": "A port of the Wordpress twentytwentytwo theme (version 1.0).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.6.1].\nLast updated on Tue Dec 27 2022."
+	"twentytwentytwo-skin-desc": "A port of the Wordpress twentytwentytwo theme (version 1.0).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.7.0].\nLast updated on Tue Dec 27 2022."
 }

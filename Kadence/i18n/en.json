@@ -7,7 +7,7 @@
 		]
 	},
 	"skinname-kadence": "Kadence",
-	"kadence-desc": "A skin created by [https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+	"kadence-desc": "A skin created by [https://skins.wmflabs.org skins.wmflabs.org v.3.0]",
 	"kadence-authors": "Multiple authors",
 	"kadence-0": "Insert HTML here",
 	"kadence-1": "Button",
@@ -42,6 +42,6 @@
 	"kadence-30": "Previous",
 	"kadence-31": "Expand child menu",
 	"kadence-32": "Collapse child menu",
-	"kadence-skin-desc": "A port of the Wordpress kadence theme (version 1.1.31).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.6.1].\nLast updated on Tue Dec 27 2022.",
+	"kadence-skin-desc": "A port of the Wordpress kadence theme (version 1.1.31).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.7.0].\nLast updated on Tue Dec 27 2022.",
 	"kadence-no-categories": "Uncategorized"
 }

@@ -6,7 +6,7 @@
 		]
 	},
 	"skinname-oceanwp": "Oceanwp",
-	"oceanwp-desc": "A skin created by [https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+	"oceanwp-desc": "A skin created by [https://skins.wmflabs.org skins.wmflabs.org v.3.0]",
 	"oceanwp-authors": "Multiple authors",
 	"oceanwp-0": "Skip to content",
 	"oceanwp-1": "Search",
@@ -53,5 +53,5 @@
 	"oceanwp-42": "View previous product",
 	"oceanwp-no-categories": "Uncategorized",
 	"oceanwp-44": "Pages:",
-	"oceanwp-skin-desc": "A port of the Wordpress oceanwp theme (version 3.3.6).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.6.1].\nLast updated on Tue Dec 27 2022."
+	"oceanwp-skin-desc": "A port of the Wordpress oceanwp theme (version 3.3.6).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.7.0].\nLast updated on Tue Dec 27 2022."
 }
