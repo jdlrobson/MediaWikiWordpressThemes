@@ -11,13 +11,13 @@
 
 <main class="site-main" role="main">
 			<header class="page-header">
-			<h1 class="entry-title">{{{html-title}}}</h1>{{>LanguageButton}}
+			<h1 class="entry-title">{{{html-title}}}</h1>{{#is-article}}{{>LanguageButton}}{{/is-article}}
 		</header>
 		<div class="page-content">
 		<div id="siteNotice">{{{html-site-notice}}}</div><div id="content">{{{html-body-content}}}</div><div>{{{html-after-content}}}</div>
-		<div class="post-tags">
+		{{^is-specialpage}}<div class="post-tags">
 			<span class="tag-links">{{msg-hello-elementor-0}}{{>CategoryPlain}}
-		</span></div>
+		</span></div>{{/is-specialpage}}
 		<!-- placeholder:categories -->	</div>
 
 	{{{html-after-content}}}

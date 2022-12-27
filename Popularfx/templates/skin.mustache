@@ -19,9 +19,9 @@
 		
 <article class="article" id="post-main-article">	
 	<header class="entry-header">
-		<h1 class="entry-title">{{{html-title}}}</h1>{{>LanguageButton}}
-			<div class="entry-meta">
-				<span class="posted-on">Posted on <a href="#t-permalink" rel="bookmark"><time class="entry-date published">{{>LastModifiedLine}}</time><time class="updated"></time></a></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="?action=history">{{msg-popularfx-authors}}</a></span></span>			</div><!-- .entry-meta -->
+		<h1 class="entry-title">{{{html-title}}}</h1>{{#is-article}}{{>LanguageButton}}{{/is-article}}
+			{{^is-specialpage}}<div class="entry-meta">
+				<span class="posted-on">Posted on <a href="#t-permalink" rel="bookmark"><time class="entry-date published">{{>LastModifiedLine}}</time><time class="updated"></time></a></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="?action=history">{{msg-popularfx-authors}}</a></span></span>			</div>{{/is-specialpage}}<!-- .entry-meta -->
 			</header><!-- .entry-header -->
 
 	
@@ -29,8 +29,8 @@
 		<div id="siteNotice">{{{html-site-notice}}}</div><div id="content">{{{html-body-content}}}</div><div>{{{html-after-content}}}</div>
 <!-- placeholder:categories -->	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<span class="cat-links">Posted in {{>CategoryLinks}}</span>{{>EditBar}}	</footer><!-- .entry-footer -->
+	{{^is-specialpage}}<footer class="entry-footer">
+		{{^is-specialpage}}<span class="cat-links">Posted in {{>CategoryLinks}}</span>{{/is-specialpage}}{{>EditBar}}	</footer>{{/is-specialpage}}<!-- .entry-footer -->
 </article><!-- #post-main-article -->
 <!-- placeholder:get_the_post_navigation -->
 	</main><!-- #main -->

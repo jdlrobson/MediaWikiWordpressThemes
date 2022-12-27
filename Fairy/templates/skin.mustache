@@ -76,11 +76,11 @@
     <div class="card card-blog-post card-full-width card-single-article">
                 <div class="card_body">
             <div>
-            <div class="category-label-group"><span class="cat-links">{{#data-portlets.data-category-normal.array-items}}{{{html}}}{{/data-portlets.data-category-normal.array-items}} </span></div>
+            <div class="category-label-group">{{^is-specialpage}}<span class="cat-links">{{#data-portlets.data-category-normal.array-items}}{{{html}}}{{/data-portlets.data-category-normal.array-items}} </span>{{/is-specialpage}}</div>
 
-            <h1 class="card_title">{{{html-title}}}</h1>{{>LanguageButton}}
-                            <div class="entry-meta">
-                    <span class="posted-on"><i class="fa fa-calendar"></i><a href="#t-permalink" rel="bookmark"><time class="entry-date published">{{>LastModifiedLine}}</time><time class="updated"></time></a></span><span class="byline"> <span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="?action=history">{{msg-fairy-authors}}</a></span></span>                </div><!-- .entry-meta -->
+            <h1 class="card_title">{{{html-title}}}</h1>{{#is-article}}{{>LanguageButton}}{{/is-article}}
+                            {{^is-specialpage}}<div class="entry-meta">
+                    <span class="posted-on"><i class="fa fa-calendar"></i><a href="#t-permalink" rel="bookmark"><time class="entry-date published">{{>LastModifiedLine}}</time><time class="updated"></time></a></span><span class="byline"> <span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="?action=history">{{msg-fairy-authors}}</a></span></span>                </div>{{/is-specialpage}}<!-- .entry-meta -->
                         </div>
 
             <div class="entry-content">

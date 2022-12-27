@@ -36,15 +36,15 @@
 <article id="post-main-article" class="post-19 post type-post status-publish format-standard hentry entry">
 
 	<header class="entry-header alignwide">
-		<h1 class="entry-title">{{{html-title}}}</h1>{{>LanguageButton}}
+		<h1 class="entry-title">{{{html-title}}}</h1>{{#is-article}}{{>LanguageButton}}{{/is-article}}
 			</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<div id="siteNotice">{{{html-site-notice}}}</div><div id="content">{{{html-body-content}}}</div><div>{{{html-after-content}}}</div>
 <!-- placeholder:categories -->	</div><!-- .entry-content -->
 
-	<footer class="entry-footer default-max-width">
-		<div class="posted-by"><span class="posted-on">Published <time class="entry-date published updated">{{>LastModifiedLine}}</time></span>{{>EditBar}}</div><div class="post-taxonomies"><span class="cat-links">Categorized as {{>CategoryLinks}} </span></div>	</footer><!-- .entry-footer -->
+	{{^is-specialpage}}<footer class="entry-footer default-max-width">
+		<div class="posted-by"><span class="posted-on">Published <time class="entry-date published updated">{{>LastModifiedLine}}</time></span>{{>EditBar}}</div><div class="post-taxonomies">{{^is-specialpage}}<span class="cat-links">Categorized as {{>CategoryLinks}} </span>{{/is-specialpage}}</div>	</footer>{{/is-specialpage}}<!-- .entry-footer -->
 
 	
 </article><!-- #post-main-article -->

@@ -76,19 +76,19 @@
 			<span class="category-links term-links category-style-normal">
 				{{>CategoryLinks}}			</span>
 		</div><!-- .entry-taxonomies -->
-		<!-- do_action:start kadence_single_before_entry_title--><!-- do_action:end kadence_single_before_entry_title--><h1 class="entry-title">{{{html-title}}}</h1>{{>LanguageButton}}
-<!-- do_action:start kadence_single_after_entry_title--><!-- do_action:end kadence_single_after_entry_title--><div class="entry-meta entry-meta-divider-dot">
+		<!-- do_action:start kadence_single_before_entry_title--><!-- do_action:end kadence_single_before_entry_title--><h1 class="entry-title">{{{html-title}}}</h1>{{#is-article}}{{>LanguageButton}}{{/is-article}}
+<!-- do_action:start kadence_single_after_entry_title--><!-- do_action:end kadence_single_after_entry_title-->{{^is-specialpage}}<div class="entry-meta entry-meta-divider-dot">
 	<!-- do_action:start kadence_before_entry_meta--><!-- do_action:end kadence_before_entry_meta-->					<span class="posted-on">
 						<time class="entry-date published">{{>LastModifiedLine}}</time><time class="updated"></time>					</span>
-					<!-- do_action:start kadence_after_entry_meta--><!-- do_action:end kadence_after_entry_meta--></div><!-- .entry-meta -->
+					<!-- do_action:start kadence_after_entry_meta--><!-- do_action:end kadence_after_entry_meta--></div>{{/is-specialpage}}<!-- .entry-meta -->
 <!-- do_action:end kadence_entry_header--><!-- do_action:start kadence_single_after_entry_header--><!-- do_action:end kadence_single_after_entry_header--></header><!-- .entry-header -->
 
 <div class="entry-content single-content">
 	<!-- do_action:start kadence_single_before_entry_content--><!-- do_action:end kadence_single_before_entry_content--><div id="siteNotice">{{{html-site-notice}}}</div><div id="content">{{{html-body-content}}}</div><div>{{{html-after-content}}}</div>
 <!-- placeholder:categories --><!-- do_action:start kadence_single_after_entry_content--><!-- do_action:end kadence_single_after_entry_content--></div><!-- .entry-content -->
-<footer class="entry-footer">
+{{^is-specialpage}}<footer class="entry-footer">
 	<div class="entry-tags">{{>CompactFooter}}</div><!-- .entry-tags -->
-</footer><!-- .entry-footer -->
+</footer>{{/is-specialpage}}<!-- .entry-footer -->
 <!-- do_action:start kadence_single_after_inner_content--><!-- do_action:end kadence_single_after_inner_content-->	</div>
 </article><!-- #post-main-article -->
 

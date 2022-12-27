@@ -177,11 +177,11 @@
 <!-- do_action:start ocean_before_single_post_title--><!-- do_action:end ocean_before_single_post_title-->
 <header class="entry-header clr">
 	<h2 class="single-post-title entry-title" itemprop="headline">{{{html-title}}}
-</h2>{{>LanguageButton}}<!-- .single-post-title -->
+</h2>{{#is-article}}{{>LanguageButton}}{{/is-article}}<!-- .single-post-title -->
 </header><!-- .entry-header -->
 
 <!-- do_action:start ocean_after_single_post_title--><!-- do_action:end ocean_after_single_post_title--><!-- do_action:start ocean_before_single_post_meta--><!-- do_action:end ocean_before_single_post_meta-->
-<ul class="meta ospm-default clr">
+{{^is-specialpage}}<ul class="meta ospm-default clr">
 
 	
 					<li class="meta-author" itemprop="name"><span class="screen-reader-text">Post author:</span><i class=" icon-user" aria-hidden="true" role="img"></i><a href="?action=history">{{msg-history_short}}</a></li>
@@ -215,7 +215,7 @@
 		
 		
 	
-</ul>
+</ul>{{/is-specialpage}}
 
 <!-- do_action:start ocean_after_single_post_meta--><!-- do_action:end ocean_after_single_post_meta-->
 <!-- do_action:start ocean_before_single_post_content--><!-- do_action:end ocean_before_single_post_content-->
@@ -224,9 +224,9 @@
 <!-- placeholder:categories -->
 </div><!-- .entry -->
 
-<!-- do_action:start ocean_after_single_post_content--><!-- do_action:end ocean_after_single_post_content--><div class="post-tags clr">
+<!-- do_action:start ocean_after_single_post_content--><!-- do_action:end ocean_after_single_post_content-->{{^is-specialpage}}<div class="post-tags clr">
 	<span class="owp-tag-text">Tags: </span>{{>CategoryPlain}}
-</div>
+</div>{{/is-specialpage}}
 
 <!-- do_action:start ocean_before_single_post_next_prev--><!-- do_action:end ocean_before_single_post_next_prev-->
 <!-- placeholder:get_the_post_navigation -->

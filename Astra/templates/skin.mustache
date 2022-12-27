@@ -74,12 +74,12 @@
 
 		<!-- do_action:start astra_single_header_top--><!-- do_action:end astra_single_header_top-->
 		<!-- do_action:start astra_blog_single_featured_image_before--><!-- do_action:end astra_blog_single_featured_image_before--><!-- do_action:start astra_blog_single_featured_image_after--><!-- do_action:end astra_blog_single_featured_image_after--><!-- do_action:start astra_blog_single_title_meta_before--><!-- do_action:end astra_blog_single_title_meta_before--><!-- do_action:start astra_single_post_order_before--><!-- do_action:end astra_single_post_order_before-->		<div class="ast-single-post-order">
-			<!-- do_action:start astra_single_post_title_before--><!-- do_action:end astra_single_post_title_before--><h1 class="entry-title">{{{html-title}}}</h1>{{>LanguageButton}}<!-- do_action:start astra_single_post_title_after--><!-- do_action:end astra_single_post_title_after--><!-- do_action:start astra_single_post_meta_before--><!-- do_action:end astra_single_post_meta_before--><div class="entry-meta"><span class="cat-links">{{>CategoryLinks}}</span> / {{msg-astra-44}}<span class="posted-by vcard author">			<a title="View all posts by {{msg-astra-authors}}" href="?action=history" rel="author" class="url fn n">
+			<!-- do_action:start astra_single_post_title_before--><!-- do_action:end astra_single_post_title_before--><h1 class="entry-title">{{{html-title}}}</h1>{{#is-article}}{{>LanguageButton}}{{/is-article}}<!-- do_action:start astra_single_post_title_after--><!-- do_action:end astra_single_post_title_after--><!-- do_action:start astra_single_post_meta_before--><!-- do_action:end astra_single_post_meta_before-->{{^is-specialpage}}<div class="entry-meta">{{^is-specialpage}}<span class="cat-links">{{>CategoryLinks}}</span>{{/is-specialpage}} / {{msg-astra-44}}<span class="posted-by vcard author">			<a title="View all posts by {{msg-astra-authors}}" href="?action=history" rel="author" class="url fn n">
 				<span class="author-name">{{msg-astra-authors}}</span>
 			</a>
 		</span>
 
-		</div><!-- do_action:start astra_single_post_meta_after--><!-- do_action:end astra_single_post_meta_after-->		</div>
+		</div>{{/is-specialpage}}<!-- do_action:start astra_single_post_meta_after--><!-- do_action:end astra_single_post_meta_after-->		</div>
 		<!-- do_action:start astra_single_post_order_after--><!-- do_action:end astra_single_post_order_after--><!-- do_action:start astra_blog_single_title_meta_after--><!-- do_action:end astra_blog_single_title_meta_after-->
 		<!-- do_action:start astra_single_header_bottom--><!-- do_action:end astra_single_header_bottom-->
 	</header><!-- .entry-header -->

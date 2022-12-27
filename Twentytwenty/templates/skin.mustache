@@ -165,11 +165,11 @@
 	<div class="entry-header-inner section-inner medium">
 
 		
-			<div class="entry-categories">
+			{{^is-specialpage}}<div class="entry-categories">
 				<span class="screen-reader-text"></span>
 				<div class="entry-categories-inner">
 					{{>CategoryPlain}}				</div><!-- .entry-categories-inner -->
-			</div><!-- .entry-categories -->
+			</div>{{/is-specialpage}}<!-- .entry-categories -->
 
 			<h1 class="entry-title">{{{html-title}}}</h1>
 
