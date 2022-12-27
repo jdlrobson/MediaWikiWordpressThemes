@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"wordpressdotorg",
+			"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+			"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
+		]
+	},
+	"skinname-twentynineteen": "Twentynineteen",
+	"twentynineteen-desc": "A skin created by [https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+	"twentynineteen-authors": "Multiple authors",
+	"twentynineteen-0": "Primary",
+	"twentynineteen-1": "Footer Menu",
+	"twentynineteen-2": "Social Links Menu",
+	"twentynineteen-3": "Small",
+	"twentynineteen-4": "S",
+	"twentynineteen-5": "Normal",
+	"twentynineteen-6": "M",
+	"twentynineteen-7": "Large",
+	"twentynineteen-8": "L",
+	"twentynineteen-9": "Huge",
+	"twentynineteen-10": "XL",
+	"twentynineteen-11": "Dark Gray",
+	"twentynineteen-12": "Light Gray",
+	"twentynineteen-13": "White",
+	"twentynineteen-14": "Pages:",
+	"twentynineteen-15": "Posted by",
+	"twentynineteen-16": ", ",
+	"twentynineteen-17": "Posted in",
+	"twentynineteen-skin-desc": "A port of the Wordpress twentynineteen theme (version 2.1).\nBuilt via [https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress-theme-to-mediawiki-skin@1.6.1].\nLast updated on Tue Dec 27 2022.",
+	"twentynineteen-no-categories": "Uncategorized"
+}

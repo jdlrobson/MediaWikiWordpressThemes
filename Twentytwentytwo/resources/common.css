@@ -1,0 +1,745 @@
+/** style: themes/twentytwentytwo/style.css *//*
+Theme Name: Twenty Twenty-Two
+Theme URI: https://github.com/wordpress/twentytwentytwo/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Built on a solidly designed foundation, Twenty Twenty-Two embraces the idea that everyone deserves a truly unique website. The theme’s subtle styles are inspired by the diversity and versatility of birds: its typography is lightweight yet strong, its color palette is drawn from nature, and its layout elements sit gently on the page. The true richness of Twenty Twenty-Two lies in its opportunity for customization. The theme is built to take advantage of the Full Site Editing features introduced in WordPress 5.9, which means that colors, typography, and the layout of every single page on your site can be customized to suit your vision. It also includes dozens of block patterns, opening the door to a wide range of professionally designed layouts in just a few clicks. Whether you’re building a single-page website, a blog, a business website, or a portfolio, Twenty Twenty-Two will help you create a site that is uniquely yours.
+Requires at least: 5.9
+Tested up to: 5.9
+Requires PHP: 5.6
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentytwo
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments
+
+Twenty Twenty-Two WordPress Theme, (C) 2021 WordPress.org
+Twenty Twenty-Two is distributed under the terms of the GNU GPL.
+*/
+
+/*
+ * Font smoothing.
+ * This is a niche setting that will not be available via Global Styles.
+ * https://github.com/WordPress/gutenberg/issues/35934
+ */
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+ * Text and navigation link styles.
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25ch;
+}
+a:hover, a:focus {
+  text-decoration-style: dashed;
+}
+a:active {
+  text-decoration: none;
+}
+.wp-block-navigation .wp-block-navigation-item a:hover, .wp-block-navigation .wp-block-navigation-item a:focus {
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+/*
+ * Search and File Block button styles.
+ * Necessary until the following issues are resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/36444
+ * https://github.com/WordPress/gutenberg/issues/27760
+ */
+
+.wp-block-search__button, .wp-block-file .wp-block-file__button {
+  background-color: var(--wp--preset--color--primary);
+  border-radius: 0;
+  border: none;
+  color: var(--wp--preset--color--background);
+  font-size: var(--wp--preset--font-size--medium);
+  padding: calc(.667em + 2px) calc(1.333em + 2px);
+}
+/*
+ * Button hover styles.
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+.wp-block-search__button:hover, .wp-block-file .wp-block-file__button:hover, .wp-block-button__link:hover {
+  opacity: 0.90;
+}
+/*
+ * Alignment styles.
+ * These rules are temporary, and should not be relied on or
+ * modified too heavily by themes or plugins that build on
+ * Twenty Twenty-Two. These are meant to be a precursor to
+ * a global solution provided by the Block Editor.
+ *
+ * Relevant issues:
+ * https://github.com/WordPress/gutenberg/issues/35607
+ * https://github.com/WordPress/gutenberg/issues/35884
+ */
+
+.wp-site-blocks, body > .is-root-container, .edit-post-visual-editor__post-title-wrapper, .wp-block-group.alignfull, .wp-block-group.has-background, .wp-block-cover.alignfull, .is-root-container .wp-block[data-align="full"] > .wp-block-group, .is-root-container .wp-block[data-align="full"] > .wp-block-cover {
+  padding-left: var(--wp--custom--spacing--outer);
+  padding-right: var(--wp--custom--spacing--outer);
+}
+.wp-site-blocks .alignfull, .wp-site-blocks > .wp-block-group.has-background, .wp-site-blocks > .wp-block-cover, .wp-site-blocks > .wp-block-template-part > .wp-block-group.has-background, .wp-site-blocks > .wp-block-template-part > .wp-block-cover, body > .is-root-container > .wp-block-group.has-background, body > .is-root-container > .wp-block-cover, body > .is-root-container > .wp-block-template-part > .wp-block-group.has-background, body > .is-root-container > .wp-block-template-part > .wp-block-cover, .is-root-container .wp-block[data-align="full"] {
+  margin-left: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+  margin-right: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+  width: unset;
+}
+/* Blocks inside columns don't have negative margins. */
+.wp-site-blocks .wp-block-columns .wp-block-column .alignfull, .is-root-container .wp-block-columns .wp-block-column .wp-block[data-align="full"], /* We also want to avoid stacking negative margins. */
+.wp-site-blocks .alignfull:not(.wp-block-group) .alignfull, .is-root-container .wp-block[data-align="full"] > *:not(.wp-block-group) .wp-block[data-align="full"] {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: inherit;
+}
+/*
+ * Responsive menu container padding.
+ * This ensures the responsive container inherits the same
+ * spacing defined above. This behavior may be built into
+ * the Block Editor in the future.
+ */
+
+.wp-block-navigation__responsive-container.is-menu-open {
+  padding-top: var(--wp--custom--spacing--outer);
+  padding-bottom: var(--wp--custom--spacing--large);
+  padding-right: var(--wp--custom--spacing--outer);
+  padding-left: var(--wp--custom--spacing--outer);
+}
+/** style: themes/twentytwentytwo/style.css *//*
+Theme Name: Twenty Twenty-Two
+Theme URI: https://github.com/wordpress/twentytwentytwo/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Built on a solidly designed foundation, Twenty Twenty-Two embraces the idea that everyone deserves a truly unique website. The theme’s subtle styles are inspired by the diversity and versatility of birds: its typography is lightweight yet strong, its color palette is drawn from nature, and its layout elements sit gently on the page. The true richness of Twenty Twenty-Two lies in its opportunity for customization. The theme is built to take advantage of the Full Site Editing features introduced in WordPress 5.9, which means that colors, typography, and the layout of every single page on your site can be customized to suit your vision. It also includes dozens of block patterns, opening the door to a wide range of professionally designed layouts in just a few clicks. Whether you’re building a single-page website, a blog, a business website, or a portfolio, Twenty Twenty-Two will help you create a site that is uniquely yours.
+Requires at least: 5.9
+Tested up to: 5.9
+Requires PHP: 5.6
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentytwo
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments
+
+Twenty Twenty-Two WordPress Theme, (C) 2021 WordPress.org
+Twenty Twenty-Two is distributed under the terms of the GNU GPL.
+*/
+
+/*
+ * Font smoothing.
+ * This is a niche setting that will not be available via Global Styles.
+ * https://github.com/WordPress/gutenberg/issues/35934
+ */
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+ * Text and navigation link styles.
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25ch;
+}
+a:hover, a:focus {
+  text-decoration-style: dashed;
+}
+a:active {
+  text-decoration: none;
+}
+.wp-block-navigation .wp-block-navigation-item a:hover, .wp-block-navigation .wp-block-navigation-item a:focus {
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+/*
+ * Search and File Block button styles.
+ * Necessary until the following issues are resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/36444
+ * https://github.com/WordPress/gutenberg/issues/27760
+ */
+
+.wp-block-search__button, .wp-block-file .wp-block-file__button {
+  background-color: var(--wp--preset--color--primary);
+  border-radius: 0;
+  border: none;
+  color: var(--wp--preset--color--background);
+  font-size: var(--wp--preset--font-size--medium);
+  padding: calc(.667em + 2px) calc(1.333em + 2px);
+}
+/*
+ * Button hover styles.
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+.wp-block-search__button:hover, .wp-block-file .wp-block-file__button:hover, .wp-block-button__link:hover {
+  opacity: 0.90;
+}
+/*
+ * Alignment styles.
+ * These rules are temporary, and should not be relied on or
+ * modified too heavily by themes or plugins that build on
+ * Twenty Twenty-Two. These are meant to be a precursor to
+ * a global solution provided by the Block Editor.
+ *
+ * Relevant issues:
+ * https://github.com/WordPress/gutenberg/issues/35607
+ * https://github.com/WordPress/gutenberg/issues/35884
+ */
+
+.wp-site-blocks, body > .is-root-container, .edit-post-visual-editor__post-title-wrapper, .wp-block-group.alignfull, .wp-block-group.has-background, .wp-block-cover.alignfull, .is-root-container .wp-block[data-align="full"] > .wp-block-group, .is-root-container .wp-block[data-align="full"] > .wp-block-cover {
+  padding-left: var(--wp--custom--spacing--outer);
+  padding-right: var(--wp--custom--spacing--outer);
+}
+.wp-site-blocks .alignfull, .wp-site-blocks > .wp-block-group.has-background, .wp-site-blocks > .wp-block-cover, .wp-site-blocks > .wp-block-template-part > .wp-block-group.has-background, .wp-site-blocks > .wp-block-template-part > .wp-block-cover, body > .is-root-container > .wp-block-group.has-background, body > .is-root-container > .wp-block-cover, body > .is-root-container > .wp-block-template-part > .wp-block-group.has-background, body > .is-root-container > .wp-block-template-part > .wp-block-cover, .is-root-container .wp-block[data-align="full"] {
+  margin-left: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+  margin-right: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+  width: unset;
+}
+/* Blocks inside columns don't have negative margins. */
+.wp-site-blocks .wp-block-columns .wp-block-column .alignfull, .is-root-container .wp-block-columns .wp-block-column .wp-block[data-align="full"], /* We also want to avoid stacking negative margins. */
+.wp-site-blocks .alignfull:not(.wp-block-group) .alignfull, .is-root-container .wp-block[data-align="full"] > *:not(.wp-block-group) .wp-block[data-align="full"] {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: inherit;
+}
+/*
+ * Responsive menu container padding.
+ * This ensures the responsive container inherits the same
+ * spacing defined above. This behavior may be built into
+ * the Block Editor in the future.
+ */
+
+.wp-block-navigation__responsive-container.is-menu-open {
+  padding-top: var(--wp--custom--spacing--outer);
+  padding-bottom: var(--wp--custom--spacing--large);
+  padding-right: var(--wp--custom--spacing--outer);
+  padding-left: var(--wp--custom--spacing--outer);
+}
+/** style:  *//* File  does not exist. *//* The following rules will not be needed in future */
+.mw-editsection {
+  font-size: 0.85em;
+  margin-left: 8px;
+}
+.printfooter {
+  display: none;
+}
+.thumbinner {
+  width: auto !important;
+}
+@media ( max-width: 800px ) {
+  .mw-parser-output table {
+  display: block;
+  width: 100% !important;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+}
+.entry-content h2.mw-toc-heading, h2#mw-toc-heading {
+  font-size: 1em;
+}
+/* Some Wordpress themes don't declare */
+@media screen {
+  /* body because applies to @media screen and those styles apply last. */
+  section h2: after, section h2:before {
+  display: table-row;
+}
+.mw-editsection a {
+  font-size: 0.6em;
+  padding: 0 8px;
+  text-decoration: none;
+  font-weight: normal;
+}
+}
+/* If wordmark present hide the next element (heading) */
+.mw-wordpress-wordmark + * {
+  display: none;
+}
+/* Reset skins expecting last modified as text only. */
+.skin-last-modified:after {
+  content: none !important;
+}
+/* disabled content-links because a.new is not scoped */
+.mw-parser-output a.new {
+  text-decoration: line-through wavy;
+}
+/*** INLINE CSS FOLLOWS ***/
+/** @todo: inline style theme.json:color */
+.wp-block-button__link {
+  border-radius: 0;
+}
+.wp-block-button__link {
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--background);
+}
+/** @todo: inline style theme.json:color */
+.wp-block-button__link {
+  border-radius: 0;
+}
+.wp-block-button__link {
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--background);
+}
+.wp-block-button__link {
+  font-size: var(--wp--preset--font-size--medium);
+}
+body {
+  background-color: var(--wp--preset--color--background);
+  color: var(--wp--preset--color--foreground);
+}
+/** @todo: inline style theme.json:color */
+a {
+  color: var(--wp--preset--color--foreground);
+}
+/** @todo: inline style theme.json:color */
+.wp-block-button__link {
+  border-radius: 0;
+}
+.wp-block-button__link {
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--background);
+}
+/** @todo: inline style theme.json:color */
+.wp-block-button__link {
+  border-radius: 0;
+}
+.wp-block-button__link {
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--background);
+}
+.wp-block-button__link {
+  font-size: var(--wp--preset--font-size--medium);
+}
+body {
+  background-color: var(--wp--preset--color--background);
+  color: var(--wp--preset--color--foreground);
+}
+/** @todo: inline style theme.json:color */
+a {
+  color: var(--wp--preset--color--foreground);
+}
+/** @todo: inline style theme.json:color */
+body {
+  --wp--preset--color--black: #000000;
+  --wp--preset--color--cyan-bluish-gray: #abb8c3;
+  --wp--preset--color--white: #ffffff;
+  --wp--preset--color--pale-pink: #f78da7;
+  --wp--preset--color--vivid-red: #cf2e2e;
+  --wp--preset--color--luminous-vivid-orange: #ff6900;
+  --wp--preset--color--luminous-vivid-amber: #fcb900;
+  --wp--preset--color--light-green-cyan: #7bdcb5;
+  --wp--preset--color--vivid-green-cyan: #00d084;
+  --wp--preset--color--pale-cyan-blue: #8ed1fc;
+  --wp--preset--color--vivid-cyan-blue: #0693e3;
+  --wp--preset--color--vivid-purple: #9b51e0;
+  --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+  --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+  --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+  --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+  --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+  --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+  --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+  --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+  --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+  --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+  --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+  --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+  --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+  --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+  --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+  --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+  --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+  --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+  --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+  --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+  --wp--preset--font-size--small: 1.125rem;
+  --wp--preset--font-size--medium: 1.25rem;
+  --wp--preset--font-size--large: 2rem;
+  --wp--preset--font-size--x-large: 2.75rem;
+  --wp--preset--font-size--extra-small: 1rem;
+  --wp--preset--font-size--xx-large: 3.75rem;
+  --wp--preset--font-family--system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --wp--preset--font-family--serif: "Times New Roman", "New York", Times, "Noto Serif", serif;
+  --wp--preset--font-family--monospace: Consolas, Menlo, Monaco, "SF Mono", "DejaVu Sans Mono", "Roboto Mono", "Courier New", Courier, monospace;
+  --wp--custom--v-spacing: 1.25rem;
+}
+body {
+  margin: 0;
+}
+body {
+  background-color: ;
+  background: var(--wp--preset--gradient--pale-ocean);
+  color: var(--wp--preset--color--black);
+  font-family: var(--wp--preset--font-family--system);
+  font-size: var(--wp--preset--font-size--medium);
+  line-height: 1.75;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  --wp--style--block-gap: var(--wp--custom--v-spacing);
+}
+.wp-site-blocks >  .tleft {
+  float: left;
+  margin-right: 2em;
+}
+.wp-site-blocks >  .tright {
+  float: right;
+  margin-left: 2em;
+}
+.wp-site-blocks > .aligncenter {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-site-blocks > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.wp-site-blocks > * + * {
+  margin-top: var( --wp--style--block-gap );
+}
+a {
+  color: var(--wp--preset--color--black);
+}
+.wp-block-button__link {
+  border-radius: 4px;
+  border-color: rgba(0, 0, 0, 0.05);
+  ;
+  border-width: 2px;
+  border-style: solid;
+  font-size: var(--wp--preset--font-size--small);
+  padding-top: 0.3rem;
+  padding-right: 1rem;
+  padding-bottom: 0.3rem;
+  padding-left: 1rem;
+}
+.has-black-color {
+  color: var(--wp--preset--color--black) !important;
+}
+.has-cyan-bluish-gray-color {
+  color: var(--wp--preset--color--cyan-bluish-gray) !important;
+}
+.has-white-color {
+  color: var(--wp--preset--color--white) !important;
+}
+.has-pale-pink-color {
+  color: var(--wp--preset--color--pale-pink) !important;
+}
+.has-vivid-red-color {
+  color: var(--wp--preset--color--vivid-red) !important;
+}
+.has-luminous-vivid-orange-color {
+  color: var(--wp--preset--color--luminous-vivid-orange) !important;
+}
+.has-luminous-vivid-amber-color {
+  color: var(--wp--preset--color--luminous-vivid-amber) !important;
+}
+.has-light-green-cyan-color {
+  color: var(--wp--preset--color--light-green-cyan) !important;
+}
+.has-vivid-green-cyan-color {
+  color: var(--wp--preset--color--vivid-green-cyan) !important;
+}
+.has-pale-cyan-blue-color {
+  color: var(--wp--preset--color--pale-cyan-blue) !important;
+}
+.has-vivid-cyan-blue-color {
+  color: var(--wp--preset--color--vivid-cyan-blue) !important;
+}
+.has-vivid-purple-color {
+  color: var(--wp--preset--color--vivid-purple) !important;
+}
+.has-black-background-color {
+  background-color: var(--wp--preset--color--black) !important;
+}
+.has-cyan-bluish-gray-background-color {
+  background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+}
+.has-white-background-color {
+  background-color: var(--wp--preset--color--white) !important;
+}
+.has-pale-pink-background-color {
+  background-color: var(--wp--preset--color--pale-pink) !important;
+}
+.has-vivid-red-background-color {
+  background-color: var(--wp--preset--color--vivid-red) !important;
+}
+.has-luminous-vivid-orange-background-color {
+  background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+}
+.has-luminous-vivid-amber-background-color {
+  background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+}
+.has-light-green-cyan-background-color {
+  background-color: var(--wp--preset--color--light-green-cyan) !important;
+}
+.has-vivid-green-cyan-background-color {
+  background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+}
+.has-pale-cyan-blue-background-color {
+  background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+}
+.has-vivid-cyan-blue-background-color {
+  background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+}
+.has-vivid-purple-background-color {
+  background-color: var(--wp--preset--color--vivid-purple) !important;
+}
+.has-black-border-color {
+  border-color: var(--wp--preset--color--black) !important;
+}
+.has-cyan-bluish-gray-border-color {
+  border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+}
+.has-white-border-color {
+  border-color: var(--wp--preset--color--white) !important;
+}
+.has-pale-pink-border-color {
+  border-color: var(--wp--preset--color--pale-pink) !important;
+}
+.has-vivid-red-border-color {
+  border-color: var(--wp--preset--color--vivid-red) !important;
+}
+.has-luminous-vivid-orange-border-color {
+  border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+}
+.has-luminous-vivid-amber-border-color {
+  border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+}
+.has-light-green-cyan-border-color {
+  border-color: var(--wp--preset--color--light-green-cyan) !important;
+}
+.has-vivid-green-cyan-border-color {
+  border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+}
+.has-pale-cyan-blue-border-color {
+  border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+}
+.has-vivid-cyan-blue-border-color {
+  border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+}
+.has-vivid-purple-border-color {
+  border-color: var(--wp--preset--color--vivid-purple) !important;
+}
+.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+  background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+}
+.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+  background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+}
+.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+  background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+}
+.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+  background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+}
+.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+  background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+}
+.has-cool-to-warm-spectrum-gradient-background {
+  background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+}
+.has-blush-light-purple-gradient-background {
+  background: var(--wp--preset--gradient--blush-light-purple) !important;
+}
+.has-blush-bordeaux-gradient-background {
+  background: var(--wp--preset--gradient--blush-bordeaux) !important;
+}
+.has-luminous-dusk-gradient-background {
+  background: var(--wp--preset--gradient--luminous-dusk) !important;
+}
+.has-pale-ocean-gradient-background {
+  background: var(--wp--preset--gradient--pale-ocean) !important;
+}
+.has-electric-grass-gradient-background {
+  background: var(--wp--preset--gradient--electric-grass) !important;
+}
+.has-midnight-gradient-background {
+  background: var(--wp--preset--gradient--midnight) !important;
+}
+.has-small-font-size {
+  font-size: var(--wp--preset--font-size--small) !important;
+}
+.has-medium-font-size {
+  font-size: var(--wp--preset--font-size--medium) !important;
+}
+.has-large-font-size {
+  font-size: var(--wp--preset--font-size--large) !important;
+}
+.has-x-large-font-size {
+  font-size: var(--wp--preset--font-size--x-large) !important;
+}
+.has-extra-small-font-size {
+  font-size: var(--wp--preset--font-size--extra-small) !important;
+}
+.has-xx-large-font-size {
+  font-size: var(--wp--preset--font-size--xx-large) !important;
+}
+.has-system-font-family {
+  font-family: var(--wp--preset--font-family--system) !important;
+}
+.has-serif-font-family {
+  font-family: var(--wp--preset--font-family--serif) !important;
+}
+.has-monospace-font-family {
+  font-family: var(--wp--preset--font-family--monospace) !important;
+}
+has-text-align-center {
+  text-align: center;
+}
+.wp-block-button__link {
+  border-radius: 0;
+}
+.wp-block-button__link {
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--background);
+}
+.wp-block-button__link {
+  font-size: var(--wp--preset--font-size--medium);
+}
+body {
+  background-color: var(--wp--preset--color--background);
+  color: var(--wp--preset--color--foreground);
+}
+h1 {
+  font-family: var(--wp--preset--font-family--source-serif-pro);
+  font-weight: 300;
+  line-height: var(--wp--custom--typography--line-height--tiny);
+  font-size: var(--wp--custom--typography--font-size--colossal);
+}
+h2 {
+  font-family: var(--wp--preset--font-family--source-serif-pro);
+  font-weight: 300;
+  line-height: var(--wp--custom--typography--line-height--small);
+  font-size: var(--wp--custom--typography--font-size--gigantic);
+}
+h3 {
+  font-family: var(--wp--preset--font-family--source-serif-pro);
+  font-weight: 300;
+  line-height: var(--wp--custom--typography--line-height--tiny);
+  font-size: var(--wp--custom--typography--font-size--huge);
+}
+h4 {
+  font-family: var(--wp--preset--font-family--source-serif-pro);
+  font-weight: 300;
+  line-height: var(--wp--custom--typography--line-height--tiny);
+  font-size: var(--wp--preset--font-size--x-large);
+}
+h5 {
+  font-family: var(--wp--preset--font-family--system-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: var(--wp--custom--typography--line-height--normal);
+  font-size: var(--wp--preset--font-size--medium);
+}
+h6 {
+  font-family: var(--wp--preset--font-family--system-font);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: var(--wp--custom--typography--line-height--normal);
+  font-size: var(--wp--preset--font-size--medium);
+}
+a {
+  color: var(--wp--preset--color--foreground);
+}
+body {
+  --wp--style--block-gap: $data;
+}
+body {
+  font-family: var(--wp--preset--font-family--system-font);
+  line-height: var(--wp--custom--typography--line-height--normal);
+  font-size: var(--wp--preset--font-size--medium);
+}
+.wp-block-button__link {
+  border-radius: 0;
+}
+.wp-block-button__link {
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--background);
+}
+.wp-block-button__link {
+  font-size: var(--wp--preset--font-size--medium);
+}
+body {
+  background-color: var(--wp--preset--color--background);
+  color: var(--wp--preset--color--foreground);
+}
+h1 {
+  font-family: var(--wp--preset--font-family--source-serif-pro);
+  font-weight: 300;
+  line-height: var(--wp--custom--typography--line-height--tiny);
+  font-size: var(--wp--custom--typography--font-size--colossal);
+}
+h2 {
+  font-family: var(--wp--preset--font-family--source-serif-pro);
+  font-weight: 300;
+  line-height: var(--wp--custom--typography--line-height--small);
+  font-size: var(--wp--custom--typography--font-size--gigantic);
+}
+h3 {
+  font-family: var(--wp--preset--font-family--source-serif-pro);
+  font-weight: 300;
+  line-height: var(--wp--custom--typography--line-height--tiny);
+  font-size: var(--wp--custom--typography--font-size--huge);
+}
+h4 {
+  font-family: var(--wp--preset--font-family--source-serif-pro);
+  font-weight: 300;
+  line-height: var(--wp--custom--typography--line-height--tiny);
+  font-size: var(--wp--preset--font-size--x-large);
+}
+h5 {
+  font-family: var(--wp--preset--font-family--system-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: var(--wp--custom--typography--line-height--normal);
+  font-size: var(--wp--preset--font-size--medium);
+}
+h6 {
+  font-family: var(--wp--preset--font-family--system-font);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: var(--wp--custom--typography--line-height--normal);
+  font-size: var(--wp--preset--font-size--medium);
+}
+a {
+  color: var(--wp--preset--color--foreground);
+}
+body {
+  --wp--style--block-gap: $data;
+}
+body {
+  font-family: var(--wp--preset--font-family--system-font);
+  line-height: var(--wp--custom--typography--line-height--normal);
+  font-size: var(--wp--preset--font-size--medium);
+}
+/** @todo: inline style twentytwentytwo-style */
+
+      @font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 200 900;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  src: url('themes/twentytwentytwo/assets/fonts/SourceSerif4Variable-Roman.ttf.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 200 900;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap;
+  src: url('themes/twentytwentytwo/assets/fonts/SourceSerif4Variable-Italic.ttf.woff2') format('woff2');
+}

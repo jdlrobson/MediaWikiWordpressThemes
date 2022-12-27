@@ -1,0 +1,105 @@
+{
+	"name": "Twentytwenty",
+	"version": "1.0.0",
+	"author": [
+		"the WordPress team",
+		"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+		"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:Twentytwenty",
+	"descriptionmsg": "twentytwenty-skin-desc",
+	"namemsg": "skinname-twentytwenty",
+	"license-name": "GPL-2.0-or-later",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"ValidSkinNames": {
+		"twentytwenty": {
+			"class": "SkinMustache",
+			"args": [
+				{
+					"name": "twentytwenty",
+					"responsive": true,
+					"toc": false,
+					"messages": [
+						"twentytwenty-no-categories",
+						"sitetitle",
+						"search",
+						"otherlanguages",
+						"tagline"
+					],
+					"styles": [
+						"mediawiki.ui.icon",
+						"mediawiki.ui.button",
+						"skins.twentytwenty.styles"
+					],
+					"scripts": [
+						"skins.twentytwenty"
+					],
+					"authors": [
+						"the WordPress team",
+						"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+						"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
+					],
+					"bodyClasses": [
+						"singular",
+						"enable-search-modal",
+						"missing-post-thumbnail",
+						"has-no-pagination",
+						"not-showing-comments",
+						"hide-avatars",
+						"footer-top-visible",
+						"single-post",
+						"single"
+					],
+					"version": "1.8"
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"Twentytwenty": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.twentytwenty.styles": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"normalize": false,
+				"elements": false,
+				"content-tables": true,
+				"content-links": false,
+				"content-media": true,
+				"content-links-external": false,
+				"interface-message-box": true,
+				"interface-category": false,
+				"toc": true
+			},
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": [
+				"resources/common.css",
+				"resources/skin.less"
+			]
+		},
+		"skins.twentytwenty": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"packageFiles": [
+				"resources/skin.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Twentytwenty"
+	},
+	"ResourceModuleSkinStyles": {},
+	"manifest_version": 2
+}

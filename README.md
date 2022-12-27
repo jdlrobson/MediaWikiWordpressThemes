@@ -34,3 +34,12 @@ https://wordpress.org/themes/kadence
 
 ## [Ported] PopularFx
 https://wordpress.org/themes/popularfx
+
+## [Ported] 2019
+https://wordpress.org/themes/twentynineteen
+
+## [Ported] 2020
+https://wordpress.org/themes/twentytwenty
+
+## [Ported] 2021
+https://wordpress.org/themes/twentytwentyone

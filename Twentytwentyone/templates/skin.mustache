@@ -1,0 +1,89 @@
+{{>AdminBar}}<!-- generated-from:single-->
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	
+<header id="masthead" class="site-header has-logo has-title-and-tagline has-menu" role="banner">
+
+	
+	<div class="site-logo">{{>Logo}}</div>
+
+<div class="site-branding">
+
+	
+						<p class="site-title"><a href="{{link-mainpage}}">{{msg-sitetitle}}</a></p>
+			
+			<p class="site-description">
+			{{msg-tagline}}		</p>
+	</div><!-- .site-branding -->
+	
+	<nav id="site-navigation" class="primary-navigation" role="navigation" aria-label="">
+		<div class="menu-button-container">
+			<button id="primary-mobile-menu" class="button" aria-controls="primary-menu-list" aria-expanded="false">
+				<span class="dropdown-icon open">Menu					<svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6H19.5V7.5H4.5V6ZM4.5 12H19.5V13.5H4.5V12ZM19.5 18H4.5V19.5H19.5V18Z" fill="currentColor"></path></svg>				</span>
+				<span class="dropdown-icon close">Close					<svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.9394L5.53033 4.46973L4.46967 5.53039L10.9393 12.0001L4.46967 18.4697L5.53033 19.5304L12 13.0607L18.4697 19.5304L19.5303 18.4697L13.0607 12.0001L19.5303 5.53039L18.4697 4.46973L12 10.9394Z" fill="currentColor"></path></svg>				</span>
+			</button><!-- #primary-mobile-menu -->
+		</div><!-- .menu-button-container -->
+		<!-- wp_nav_menu: primary--><div class="primary-menu-container mw-wp-menu"><ul id="primary-menu-list" class="menu-wrapper">{{#data-portlets-sidebar.data-portlets-first}}{{{html-items}}}{{/data-portlets-sidebar.data-portlets-first}}<!-- get_menu_for_mediawiki: primary--></ul><!--{"theme_location":"primary","menu_class":"menu-wrapper","container_class":"primary-menu-container","items_wrap":"<ul id=\"primary-menu-list\" class=\"%2$s\">%3$s<\/ul>","fallback_cb":false}--></div>
+	</nav><!-- #site-navigation -->
+
+</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
+
+<article id="post-main-article" class="post-19 post type-post status-publish format-standard hentry entry">
+
+	<header class="entry-header alignwide">
+		<h1 class="entry-title">{{{html-title}}}</h1>{{>LanguageButton}}
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<div id="siteNotice">{{{html-site-notice}}}</div><div id="content">{{{html-body-content}}}</div><div>{{{html-after-content}}}</div>
+<!-- placeholder:categories -->	</div><!-- .entry-content -->
+
+	<footer class="entry-footer default-max-width">
+		<div class="posted-by"><span class="posted-on">Published <time class="entry-date published updated">{{>LastModifiedLine}}</time></span>{{>EditBar}}</div><div class="post-taxonomies"><span class="cat-links">Categorized as <span class="skin-category-list mw-portlet mw-portlet-category-normal">{{#data-portlets.data-category-normal.array-items}}{{{html}}} {{/data-portlets.data-category-normal.array-items}}</span> </span></div>	</footer><!-- .entry-footer -->
+
+	
+</article><!-- #post-main-article -->
+<!-- placeholder:get_the_post_navigation -->			</main><!-- #main -->
+		</div><!-- #primary -->
+	</div><!-- #content -->
+
+	
+	<aside class="widget-area">
+		{{#data-portlets-sidebar.array-portlets-rest}}<!-- echowidget -->
+<section class="widget widget_{{id}} {{class}}" id="{{id}}">
+<h2 class="widget-title">{{label}}</h2>
+<ul>{{{html-items}}}</ul>
+{{{html-after-portal}}}
+</section>{{/data-portlets-sidebar.array-portlets-rest}}<!-- dynamic_sidebar:sidebar-1-->	</aside><!-- .widget-area -->
+
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+
+					<nav aria-label="" class="footer-navigation">
+				<ul class="footer-navigation-wrapper">
+					<!-- wp_nav_menu: footer-->{{#data-footer.data-places.array-items}}<li id="{{id}}" class="{{class}}">{{{html}}}</li>{{/data-footer.data-places.array-items}}{{#data-footer.data-icons.array-items}}<li id="{{id}}" class="{{class}}">{{{html}}}</li>{{/data-footer.data-icons.array-items}}<!-- get_menu_for_mediawiki: footer--><!--{"theme_location":"footer","items_wrap":"%3$s","container":false,"depth":1,"link_before":"<span>","link_after":"<\/span>","fallback_cb":false}-->
+				</ul><!-- .footer-navigation-wrapper -->
+			</nav><!-- .footer-navigation -->
+				<div class="site-info">
+			<div class="site-name">
+									<div class="site-logo">{{>Logo}}</div>
+							</div><!-- .site-name -->
+			<div class="powered-by"><span>{{>CopyrightLine}}Proudly powered by WordPress.</span></div><!-- .powered-by -->
+
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+
+<!-- do_action:start wp_footer--><script>document.body.classList.remove("no-js");</script>	<script>
+	if ( -1 !== navigator.userAgent.indexOf( 'MSIE' ) || -1 !== navigator.appVersion.indexOf( 'Trident/' ) ) {
+		document.body.classList.add( 'is-IE' );
+	}
+	</script>
+	<!-- do_action:end wp_footer-->
