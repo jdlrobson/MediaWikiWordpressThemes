@@ -56,7 +56,8 @@
 						"post-in-category-",
 						"has-topbar",
 						"has-breadcrumbs",
-						"single-post"
+						"single-post",
+						"single"
 					],
 					"version": "3.3.6"
 				}
