@@ -58,7 +58,8 @@
 						"ast-single-post",
 						"ast-inherit-site-logo-transparent",
 						"ast-hfb-header",
-						"single-post"
+						"single-post",
+						"single"
 					],
 					"version": "3.6.8"
 				}
