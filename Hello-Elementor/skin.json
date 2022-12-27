@@ -54,7 +54,8 @@
 						"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
 					],
 					"bodyClasses": [
-						"single-post"
+						"single-post",
+						"single"
 					],
 					"version": "2.4.1"
 				}
