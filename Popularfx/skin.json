@@ -44,7 +44,8 @@
 					],
 					"bodyClasses": [
 						"popularfx-body",
-						"single-post"
+						"single-post",
+						"single"
 					],
 					"version": "1.2.2"
 				}
