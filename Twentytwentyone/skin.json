@@ -62,7 +62,7 @@
 	},
 	"ResourceModules": {
 		"skins.twentytwentyone.styles": {
-			"class": "ResourceLoaderSkinModule",
+			"class": "MediaWiki\\ResourceLoader\\SkinModule",
 			"features": {
 				"normalize": false,
 				"elements": false,
