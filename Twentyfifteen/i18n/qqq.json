@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"wordpressdotorg",
+			"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+			"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
+		]
+	},
+	"skinname-twentyfifteen": "{{optional}}",
+	"twentyfifteen-skin-desc": "{{desc|what=skin|name=Twentyfifteen|url=https://www.mediawiki.org/wiki/Skin:Twentyfifteen}}",
+	"twentyfifteen-no-categories": "Message to show when no categories available"
+}

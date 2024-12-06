@@ -1,0 +1,77 @@
+{{>AdminBar}}<!-- generated-from:single-->
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">
+			</a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header">
+			<div class="site-branding">
+				{{>Logo}}						<p class="site-title"><a href="{{link-mainpage}}" rel="home">{{msg-sitetitle}}</a></p>
+												<p class="site-description">{{msg-tagline}}</p>
+										<button class="secondary-toggle"></button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+
+		<!-- do_action:start get_sidebar--><!-- do_action:end get_sidebar-->	<div id="secondary" class="secondary">
+
+					<nav id="site-navigation" class="main-navigation">
+				<!-- wp_nav_menu: primary--><div class=" mw-wp-menu"><ul id="primary-menu" class="menu nav-menu">{{#data-portlets-sidebar.data-portlets-first}}{{{html-items}}}{{/data-portlets-sidebar.data-portlets-first}}<!-- get_menu_for_mediawiki: primary--></ul><!--{"menu_class":"nav-menu","theme_location":"primary"}--></div>
+			</nav><!-- .main-navigation -->
+		
+					<nav id="social-navigation" class="social-navigation">
+				<!-- wp_nav_menu: social--><div class=" mw-wp-menu"><ul id="social-menu" class="menu "><!-- TODO:get_menu_for_mediawiki: social--><!-- get_menu_for_mediawiki: social--></ul><!--{"theme_location":"social","depth":1,"link_before":"<span class=\"screen-reader-text\">","link_after":"<\/span>"}--></div>
+			</nav><!-- .social-navigation -->
+		
+					<div id="widget-area" class="widget-area" role="complementary">
+				{{#data-portlets-sidebar.array-portlets-rest}}<!-- echowidget -->
+<section class="widget widget_{{id}} {{class}}" id="{{id}}">
+<h2 class="widget-title">{{label}}</h2>
+<ul>{{{html-items}}}</ul>
+{{{html-after-portal}}}
+</section>{{/data-portlets-sidebar.array-portlets-rest}}<!-- dynamic_sidebar:sidebar-1-->			</div><!-- .widget-area -->
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+		
+<article id="post-main-article" class="post-19 post type-post status-publish format-standard hentry entry">
+	
+	<header class="entry-header">
+		<h1 class="entry-title">{{{html-title}}}</h1>{{#is-article}}{{>LanguageButton}}{{/is-article}}
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<div id="siteNotice">{{{html-site-notice}}}</div><div id="content">{{{html-body-content}}}</div><div>{{{html-after-content}}}</div>
+{{#data-portlets}}
+    {{>CategoryPortlet}}
+    {{/data-portlets}}
+	</div><!-- .entry-content -->
+
+	
+	{{^is-specialpage}}<footer class="entry-footer">{{>CompactFooter}}</footer>{{/is-specialpage}}<!-- .entry-footer -->
+
+</article><!-- #post-main-article -->
+<!-- placeholder:get_the_post_navigation -->
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer id="colophon" class="site-footer">
+		<div class="site-info">
+			<!-- do_action:start twentyfifteen_credits--><!-- do_action:end twentyfifteen_credits-->						<a href="https://wordpress.org/" class="imprint">
+				Proudly powered by WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+
+<!-- do_action:start wp_footer--><!-- do_action:end wp_footer-->
