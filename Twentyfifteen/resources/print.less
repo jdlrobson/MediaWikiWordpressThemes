@@ -1,0 +1,27 @@
+/* Styles for print view and printing. */
+/* You can use CSS files or Less files depending on your preference. */
+
+/* Hide some extra stuff from print view (some of the navigation is already hidden automatically,
+but not all). */
+.mw-indicators,
+.mw-portlet-personal,
+.mw-portlet-views,
+.mw-portlet-namespaces,
+.mw-portlet-cactions,
+.mw-portlet-notifications,
+.mw-interlanguage-selector,
+.mw-portlet-lang,
+.toggle-list,
+.catlinks,
+.mw-footer,
+.mw-portlet-variants,
+form.mw-portlet,
+#toc-sticky {
+	display: none;
+}
+
+#p-logo a {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}

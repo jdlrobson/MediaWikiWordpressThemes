@@ -1,0 +1,97 @@
+{
+	"name": "Twentyfifteen",
+	"version": "1.0.0",
+	"author": [
+		"wordpressdotorg",
+		"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+		"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:Twentyfifteen",
+	"descriptionmsg": "twentyfifteen-skin-desc",
+	"namemsg": "skinname-twentyfifteen",
+	"license-name": "GPL-2.0-or-later",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.41.0"
+	},
+	"ValidSkinNames": {
+		"twentyfifteen": {
+			"class": "SkinMustache",
+			"args": [
+				{
+					"name": "twentyfifteen",
+					"responsive": true,
+					"toc": false,
+					"messages": [
+						"twentyfifteen-no-categories",
+						"otherlanguages",
+						"sitetitle",
+						"search",
+						"tagline"
+					],
+					"styles": [
+						"codex-styles",
+						"skins.twentyfifteen.styles"
+					],
+					"scripts": [
+						"skins.twentyfifteen"
+					],
+					"authors": [
+						"wordpressdotorg",
+						"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
+						"[https://github.com/jdlrobson/wordpress-theme-to-mediawiki-skin wordpress theme to mediawiki skin]"
+					],
+					"bodyClasses": [
+						"single-post",
+						"single"
+					],
+					"version": "<unknown>"
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"Twentyfifteen": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.twentyfifteen.styles": {
+			"class": "MediaWiki\\ResourceLoader\\SkinModule",
+			"features": {
+				"normalize": false,
+				"elements": false,
+				"content-tables": true,
+				"content-links": false,
+				"content-media": true,
+				"content-links-external": false,
+				"interface-message-box": true,
+				"interface-category": true,
+				"toc": true
+			},
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": [
+				"resources/common.css",
+				"resources/skin.less"
+			]
+		},
+		"skins.twentyfifteen": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"packageFiles": [
+				"resources/skin.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Twentyfifteen"
+	},
+	"ResourceModuleSkinStyles": {},
+	"manifest_version": 2
+}
