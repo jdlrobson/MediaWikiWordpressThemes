@@ -1,6 +1,6 @@
 {
 	"name": "Hello-Elementor",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"author": [
 		"elemntor",
 		"KingYes",
@@ -17,7 +17,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.41.0"
+		"MediaWiki": ">= 1.46.0"
 	},
 	"ValidSkinNames": {
 		"hello-elementor": {
@@ -27,6 +27,12 @@
 					"name": "hello-elementor",
 					"responsive": true,
 					"toc": false,
+					"menus": [
+						"associated-pages",
+						"views",
+						"notifications",
+						"user-menu"
+					],
 					"messages": [
 						"hello-elementor-no-categories",
 						"sitetitle",
@@ -36,8 +42,7 @@
 						"hello-elementor-0"
 					],
 					"styles": [
-						"mediawiki.ui.icon",
-						"mediawiki.ui.button",
+						"skins.hello-elementor.codex",
 						"skins.hello-elementor.styles"
 					],
 					"scripts": [
@@ -68,6 +73,13 @@
 		]
 	},
 	"ResourceModules": {
+		"skins.hello-elementor.codex": {
+			"class": "MediaWiki\\ResourceLoader\\CodexModule",
+			"codexStyleOnly": true,
+			"codexComponents": [
+				"CdxButton"
+			]
+		},
 		"skins.hello-elementor.styles": {
 			"class": "MediaWiki\\ResourceLoader\\SkinModule",
 			"features": {
@@ -77,24 +89,15 @@
 				"content-links": false,
 				"content-media": true,
 				"content-links-external": false,
-				"interface-message-box": true,
 				"interface-category": false,
 				"toc": true
 			},
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"styles": [
 				"resources/common.css",
 				"resources/skin.less"
 			]
 		},
 		"skins.hello-elementor": {
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"packageFiles": [
 				"resources/skin.js"
 			]

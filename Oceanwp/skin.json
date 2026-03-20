@@ -12,7 +12,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.41.0"
+		"MediaWiki": ">= 1.46.0"
 	},
 	"ValidSkinNames": {
 		"oceanwp": {
@@ -22,6 +22,12 @@
 					"name": "oceanwp",
 					"responsive": true,
 					"toc": false,
+					"menus": [
+						"associated-pages",
+						"views",
+						"notifications",
+						"user-menu"
+					],
 					"messages": [
 						"oceanwp-no-categories",
 						"sitetitle",
@@ -37,8 +43,7 @@
 						"oceanwp-34"
 					],
 					"styles": [
-						"mediawiki.ui.icon",
-						"mediawiki.ui.button",
+						"skins.oceanwp.codex",
 						"skins.oceanwp.styles"
 					],
 					"scripts": [
@@ -72,6 +77,13 @@
 		]
 	},
 	"ResourceModules": {
+		"skins.oceanwp.codex": {
+			"class": "MediaWiki\\ResourceLoader\\CodexModule",
+			"codexStyleOnly": true,
+			"codexComponents": [
+				"CdxButton"
+			]
+		},
 		"skins.oceanwp.styles": {
 			"class": "MediaWiki\\ResourceLoader\\SkinModule",
 			"features": {
@@ -81,24 +93,15 @@
 				"content-links": false,
 				"content-media": true,
 				"content-links-external": false,
-				"interface-message-box": true,
 				"interface-category": false,
 				"toc": true
 			},
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"styles": [
 				"resources/common.css",
 				"resources/skin.less"
 			]
 		},
 		"skins.oceanwp": {
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"packageFiles": [
 				"resources/skin.js"
 			]

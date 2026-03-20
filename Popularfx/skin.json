@@ -12,7 +12,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.41.0"
+		"MediaWiki": ">= 1.46.0"
 	},
 	"ValidSkinNames": {
 		"popularfx": {
@@ -22,6 +22,12 @@
 					"name": "popularfx",
 					"responsive": true,
 					"toc": false,
+					"menus": [
+						"associated-pages",
+						"views",
+						"notifications",
+						"user-menu"
+					],
 					"messages": [
 						"popularfx-no-categories",
 						"sitetitle",
@@ -32,8 +38,7 @@
 						"popularfx-1"
 					],
 					"styles": [
-						"mediawiki.ui.icon",
-						"mediawiki.ui.button",
+						"skins.popularfx.codex",
 						"skins.popularfx.styles"
 					],
 					"scripts": [
@@ -60,6 +65,13 @@
 		]
 	},
 	"ResourceModules": {
+		"skins.popularfx.codex": {
+			"class": "MediaWiki\\ResourceLoader\\CodexModule",
+			"codexStyleOnly": true,
+			"codexComponents": [
+				"CdxButton"
+			]
+		},
 		"skins.popularfx.styles": {
 			"class": "MediaWiki\\ResourceLoader\\SkinModule",
 			"features": {
@@ -69,24 +81,15 @@
 				"content-links": false,
 				"content-media": true,
 				"content-links-external": false,
-				"interface-message-box": true,
 				"interface-category": false,
 				"toc": true
 			},
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"styles": [
 				"resources/common.css",
 				"resources/skin.less"
 			]
 		},
 		"skins.popularfx": {
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"packageFiles": [
 				"resources/skin.js"
 			]

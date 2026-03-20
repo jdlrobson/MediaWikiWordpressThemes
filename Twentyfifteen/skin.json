@@ -12,7 +12,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.41.0"
+		"MediaWiki": ">= 1.46.0"
 	},
 	"ValidSkinNames": {
 		"twentyfifteen": {
@@ -22,6 +22,12 @@
 					"name": "twentyfifteen",
 					"responsive": true,
 					"toc": false,
+					"menus": [
+						"associated-pages",
+						"views",
+						"notifications",
+						"user-menu"
+					],
 					"messages": [
 						"twentyfifteen-no-categories",
 						"otherlanguages",
@@ -56,6 +62,13 @@
 		]
 	},
 	"ResourceModules": {
+		"skins.twentyfifteen.codex": {
+			"class": "MediaWiki\\ResourceLoader\\CodexModule",
+			"codexStyleOnly": true,
+			"codexComponents": [
+				"CdxButton"
+			]
+		},
 		"skins.twentyfifteen.styles": {
 			"class": "MediaWiki\\ResourceLoader\\SkinModule",
 			"features": {
@@ -69,20 +82,12 @@
 				"interface-category": true,
 				"toc": true
 			},
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"styles": [
 				"resources/common.css",
 				"resources/skin.less"
 			]
 		},
 		"skins.twentyfifteen": {
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"packageFiles": [
 				"resources/skin.js"
 			]

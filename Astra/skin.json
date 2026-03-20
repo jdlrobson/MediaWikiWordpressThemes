@@ -93,24 +93,15 @@
 				"content-links": false,
 				"content-media": true,
 				"content-links-external": false,
-				"interface-message-box": true,
 				"interface-category": false,
 				"toc": true
 			},
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"styles": [
 				"resources/common.css",
 				"resources/skin.less"
 			]
 		},
 		"skins.astra": {
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"packageFiles": [
 				"resources/skin.js"
 			]
