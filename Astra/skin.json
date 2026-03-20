@@ -1,6 +1,6 @@
 {
 	"name": "Astra",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"author": [
 		"brainstormforce",
 		"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]",
@@ -12,7 +12,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.41.0"
+		"MediaWiki": ">= 1.46.0"
 	},
 	"ValidSkinNames": {
 		"astra": {
@@ -22,6 +22,12 @@
 					"name": "astra",
 					"responsive": true,
 					"toc": false,
+					"menus": [
+						"associated-pages",
+						"views",
+						"notifications",
+						"user-menu"
+					],
 					"messages": [
 						"astra-no-categories",
 						"sitetitle",
@@ -35,8 +41,7 @@
 						"astra-52"
 					],
 					"styles": [
-						"mediawiki.ui.icon",
-						"mediawiki.ui.button",
+						"skins.astra.codex",
 						"skins.astra.styles"
 					],
 					"scripts": [
@@ -72,6 +77,13 @@
 		]
 	},
 	"ResourceModules": {
+		"skins.astra.codex": {
+			"class": "MediaWiki\\ResourceLoader\\CodexModule",
+			"codexStyleOnly": true,
+			"codexComponents": [
+				"CdxButton"
+			]
+		},
 		"skins.astra.styles": {
 			"class": "MediaWiki\\ResourceLoader\\SkinModule",
 			"features": {
